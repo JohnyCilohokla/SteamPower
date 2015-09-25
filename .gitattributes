@@ -1,0 +1,2 @@
+.tga filter=lfs diff=lfs merge=lfs -crlf
+.obj filter=lfs diff=lfs merge=lfs -crlf
