@@ -1,0 +1,81 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Elevator Frame
+		{
+			Script
+			{
+				file = "Scripts/Objects/Frame.lua"
+				class = "Frame"
+				arguments
+				{
+					attachmentPointsRef = "Frames/ElevatorFrame.isd"
+					targetObject = "Elevator Middle"
+					targets
+					{
+						Elevator Base
+						{
+							name = "Elevator Base"
+						}
+						Elevator Middle
+						{
+							name = "Elevator Middle"
+						}
+						Elevator Top
+						{
+							name = "Elevator Top"
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Frames/Elevator_Frame.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Frames/Elevator_Frame_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Frames/Elevator_Frame_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Elevator Frame"
+				icon = "Elevator_Frame"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

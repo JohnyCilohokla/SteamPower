@@ -1,0 +1,176 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Clay Jar Open
+		{
+			Script
+			{
+				file = "Scripts/Objects/ClayJug.lua"
+				class = "ClayJug"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Jug_Clay_Open.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Clay Jar_Open"
+				icon = "Clay_Jar_Open"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				maxStackCount = 1
+			}
+		}
+		Clay Jar
+		{
+			Script
+			{
+				file = "Scripts/Objects/ClayJug.lua"
+				class = "ClayJug"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Jug_Clay.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Clay Jar"
+				icon = "Clay_Jar"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+		Clay Jar New
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableObject.lua"
+				class = "CLPlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Jug_Clay.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_New_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Jug_Clay_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Clay Jar New"
+				icon = "Clay_Jar_New"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+	}
+}

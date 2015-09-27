@@ -1,0 +1,63 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Sheet Table Frame
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableObject.lua"
+				class = "CLPlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Frames/Sheet_Table_Frame.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Character\Weapons\0spearB_WFR_New_diff.tga"
+				}
+				Normal
+				{
+					0 = "Character\Weapons\0spearB_WFR_New_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 10.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Sheet Table Frame"
+				icon = "Sheet_Table_Frame"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 4
+			}
+		}
+	}
+}

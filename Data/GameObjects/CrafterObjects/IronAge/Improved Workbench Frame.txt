@@ -1,0 +1,65 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Improved Workbench Frame
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				arguments
+				{
+					encumbrance = 11
+					category = "Table"
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Frames/Improved_Workbench_Frame.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Frames/Improved_Workbench_Frame_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Frames/Improved_Workbench_Frame_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Improved Workbench Frame"
+				icon = "Improved_Workbench_Frame"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "GrassPlace"
+				removalSound = "GrassDig"
+				miningEmitter = "Strike WoodHard Emitter"
+				category = "Table"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				survivalFaceCamera = 1
+				survivalRotOffset = [0.0, 1.0, 0.0, 90.0]
+			}
+		}
+	}
+}

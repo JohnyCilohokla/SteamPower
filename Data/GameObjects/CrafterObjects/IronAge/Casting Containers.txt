@@ -1,0 +1,321 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Casting Cylinder
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				
+				arguments
+				{
+					encumbrance = 11.0
+					
+					dataMetricCategory = "Table"
+					UBPcraft = 5
+					LBPcraft = 5
+					XPcraft = 10
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Casting Jar"
+				icon = "Casting_Cylinder"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+		Casting Cylinder New
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				
+				arguments
+				{
+					encumbrance = 11.0
+					
+					dataMetricCategory = "Table"
+					UBPcraft = 5
+					LBPcraft = 5
+					XPcraft = 10
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay_New_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_Cylinder_Clay_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Casting Jar New"
+				icon = "Casting_Cylinder_New"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+		Casting S Box Wooden
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				
+				arguments
+				{
+					encumbrance = 11.0
+					
+					dataMetricCategory = "Table"
+					UBPcraft = 5
+					LBPcraft = 5
+					XPcraft = 10
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Casting_S_Box_Wooden.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_S_Box_Wooden_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_S_Box_Wooden_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Casting Box Small"
+				icon = "Casting_S_Box_Wooden"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+		Casting M Box Wooden
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				
+				arguments
+				{
+					encumbrance = 11.0
+					
+					dataMetricCategory = "Table"
+					UBPcraft = 5
+					LBPcraft = 5
+					XPcraft = 10
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Casting_M_Box_Wooden.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_L_Box_Wooden_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_L_Box_Wooden_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Casting Box Medium"
+				icon = "Casting_M_Box_Wooden"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+		Casting L Box Wooden
+		{
+			Script
+			{
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
+				
+				arguments
+				{
+					encumbrance = 11.0
+					
+					dataMetricCategory = "Table"
+					UBPcraft = 5
+					LBPcraft = 5
+					XPcraft = 10
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Casting_L_Box_Wooden.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_L_Box_Wooden_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Casting_L_Box_Wooden_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Casting Box Large"
+				icon = "Casting_L_Box_Wooden"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Sheet Table
+		{
+			Script
+			{
+				file = "Scripts/Objects/SheetCast.lua"
+				class = "SheetCast"
+				arguments
+				{
+					SheetTableCrafting
+					{
+						Bronze Sheet
+						{
+							targetObject = "Bronze Sheet"
+							targetPosition = <0.0,0.55,0.0>
+							transitionObject = "Sheet Table Pour Molten"
+							transitionTime = 5.0
+							requiredLiquid = "Bronze"
+							requiredAmount = 50
+						}
+						Iron Sheet
+						{
+							targetObject = "Iron Sheet"
+							targetPosition = <0.0,0.55,0.0>
+							transitionObject = "Sheet Table Pour Molten"
+							transitionTime = 5.0
+							requiredLiquid = "Iron"
+							requiredAmount = 50
+						}
+						Rubber Sheet
+						{
+							targetObject = "Rubber Sheet"
+							targetPosition = <0.0,0.55,0.0>
+							transitionObject = "Sheet Table Pour Rubber"
+							transitionTime = 60.0
+							requiredLiquid = "Resin"
+							requiredAmount = 50
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Sheet_Table.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Sheet Table"
+				icon = "Sheet_Table"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 4
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Conveyor Ramp Frame
+		{
+			Script
+			{
+				file = "Scripts/Objects/Frame.lua"
+				class = "Frame"
+				arguments
+				{
+					attachmentPointsRef = "Frames/ConveyorRampFrame.isd"
+					targetObject = "Conveyor Ramp"
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Conveyor Ramp"
+				icon = "Conveyor_Ramp_Frame"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,783 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Plaster Cast Axe
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					CastCrafting
+					{
+						encumbrance = 1
+						Bronze Axe Head
+						{
+							targetObject = "Bronze Axe Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Axe.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Axe"
+				icon = "Plaster_Cast_Axe"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Blank
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableObject.lua"
+				class = "CLPlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Blank.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Blank"
+				icon = "Plaster_Cast_Blank"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Hammer
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Hammer Head
+						{
+							targetObject = "Bronze Hammer Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Hammer.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Hammer"
+				icon = "Plaster_Cast_Hammer"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Hoe
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Hoe Head
+						{
+							targetObject = "Bronze Hoe Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Hoe.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Hoe"
+				icon = "Plaster_Cast_Hoe"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Knife
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Knife Blade
+						{
+							targetObject = "Bronze Knife Blade"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Knife.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Knife"
+				icon = "Plaster_Cast_Knife"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Shovel
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Shovel Head
+						{
+							targetObject = "Bronze Shovel Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Shovel.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Shovel"
+				icon = "Plaster_Cast_Shovel"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Pick
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Pick Head
+						{
+							targetObject = "Bronze Pick Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Pick.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Pickaxe"
+				icon = "Plaster_Cast_Pick"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 2
+						dropMaxAmount = 2
+					}
+				}
+			}
+		}
+		Plaster Cast Spear
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Spear Head
+						{
+							targetObject = "Bronze Spear Head"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Spear.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Spear"
+				icon = "Plaster_Cast_Spear"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 1
+						dropMaxAmount = 1
+					}
+				}
+			}
+		}
+		Plaster Cast Sword
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Sword Blade
+						{
+							targetObject = "Bronze Sword Blade"
+							requiredLiquid = "Bronze"
+							requiredAmount = 25
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Sword.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 5.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Sword"
+				icon = "Plaster_Cast_Sword"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 3
+						dropMaxAmount = 3
+					}
+				}
+			}
+		}
+		Plaster Cast Anvil
+		{
+			Script
+			{
+				file = "Scripts/Objects/PlasterCast.lua"
+				class = "PlasterCast"
+				arguments
+				{
+					encumbrance = 1
+					CastCrafting
+					{
+						Bronze Anvil
+						{
+							targetObject = "Bronze Anvil"
+							requiredLiquid = "Bronze"
+							requiredAmount = 200
+						}
+						Iron Anvil
+						{
+							targetObject = "Iron Anvil"
+							requiredLiquid = "Iron"
+							requiredAmount = 200
+						}
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Plaster_Cast_Anvil.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Plaster_Cast_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 15.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Plaster Mold Anvil"
+				icon = "Plaster_Cast_Anvil"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 20
+				durabilityLossOnCorrect = 0.0
+				durabilityLossOnIncorrect = 1.0
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 4
+						dropMaxAmount = 4
+					}
+				}
+			}
+		}
+	}
+}

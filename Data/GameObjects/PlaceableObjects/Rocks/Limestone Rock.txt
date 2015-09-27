@@ -1,0 +1,270 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Limestone Rock02
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 8
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Rocks/rock02.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksALimestone_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksC_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Rock"
+				icon = "Limestone_Rock02"
+				minScale = 1.0
+				maxScale = 2.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 70
+				durabilityLossOnCorrect = 2.0
+				durabilityLossOnIncorrect = 4.0
+				category = "Rock"
+				tier = 2
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 10
+						dropMaxAmount = 18
+					}
+				}
+			}
+		}
+		Limestone Rock04
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 5
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Rocks/rock04.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksALimestone_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksC_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Rock"
+				icon = "Limestone_Rock04"
+				minScale = 1.0
+				maxScale = 2.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 50
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 4.0
+				category = "Rock"
+				tier = 2
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 2
+						dropMaxAmount = 6
+					}
+				}
+			}
+		}
+		Limestone Rock05
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 3
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Rocks/rock05.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksALimestone_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksC_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Rock"
+				icon = "Limestone_Rock05"
+				minScale = 1.0
+				maxScale = 2.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 50
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 4.0
+				category = "Rock"
+				tier = 2
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 5
+						dropMaxAmount = 10
+					}
+				}
+			}
+		}
+		Limestone Rock06
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 6
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Rocks/rock06.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksALimestone_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Rocks/rocksC_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Rock"
+				icon = "Limestone_Rock06"
+				minScale = 1.0
+				maxScale = 2.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock White Emitter"
+				health = 50
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 4.0
+				category = "Rock"
+				tier = 2
+				Drops
+				{
+					Limestone Powder Clump
+					{
+						dropChance = 1.0
+						dropMinAmount = 6
+						dropMaxAmount = 12
+					}
+				}
+			}
+		}
+	}
+}

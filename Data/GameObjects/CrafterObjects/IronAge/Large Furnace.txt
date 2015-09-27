@@ -1,0 +1,141 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Large Furnace
+		{
+			Script
+			{
+				file = "Scripts/Objects/Stone Furnace.lua"
+				class = "StoneFurnace"
+				arguments
+				{
+					category = "Stone"
+					tier = 4
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Large_Furnace.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_diff.tga"
+					1 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_Ash_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_norm.tga"
+					1 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_Ash_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Large Furnace"
+				icon = "Large_Furnace"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Grey Emitter"
+				miningEmitterAlt = "Strike WoodLight Emitter"
+				category = "Table"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+			}
+		}
+		Large Furnace Lit
+		{
+			Script
+			{
+				file = "Scripts/Objects/Stone Furnace.lua"
+				class = "StoneFurnace"
+				arguments
+				{
+					category = "Stone"
+					tier = 4
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Large_Furnace.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_diff.tga"
+					1 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_Fire_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_norm.tga"
+					1 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_Ash_norm.tga"
+				}
+				Glow
+				{
+					1 = "Models/PlaceableObjects/CrafterObjects/Large_Furnace_Fire_glow.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Large Furnace Lit"
+				icon = "Large_Furnace_Lit"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Grey Emitter"
+				miningEmitterAlt = "Strike WoodLight Emitter"
+				category = "Table"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+			}
+			Children
+			{
+				Smoke LargeFurnace Emitter
+				{
+					offset = <0, -0.2, 0.0>
+				}
+				Fire LargeFurnace Emitter
+				{
+					offset = <0, -0.5, 0.0>
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Sheet Table Pour Molten
+		{
+			Script
+			{
+				file = "Scripts/Objects/TransitionObject.lua"
+				class = "TransitionObject"
+				arguments
+				{
+					iconGroup = "SP"
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_Pour.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_Pour_Molten_diff.tga"
+				}
+				Glow
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_Pour_Molten_glow.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Sheet Table Pour Molten"
+				icon = "Sheet_Table_Pour_Molten"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				maxStackCount = 1
+			}
+			Children
+			{
+				SheetMetal Hot Emitter
+				{
+					offset = <0.0, 0.0, 0.0>
+				}
+			}
+		}
+		Sheet Table Pour Rubber
+		{
+			Script
+			{
+				file = "Scripts/Objects/TransitionObject.lua"
+				class = "TransitionObject"
+				arguments
+				{
+					iconGroup = "SP"
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_Pour.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Sheet_Table_Pour_Rubber_diff.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 60.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Sheet Table Pour Rubber"
+				icon = "Sheet_Table_Pour_Rubber"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				maxStackCount = 1
+			}
+		}
+	}
+}

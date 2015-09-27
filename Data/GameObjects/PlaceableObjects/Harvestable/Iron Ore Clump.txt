@@ -1,0 +1,68 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Iron Ore Clump
+		{
+			Transform
+			{
+			}
+			
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableObject.lua"
+				class = "CLPlaceableObject"
+				arguments
+				{
+					encumbrance = 0.0275
+				}
+			}
+			
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Harvestables/clutterLumps.obj"
+				
+				Diffuse
+				{
+					0 = "Materials/Textures/iron_diff.tga"
+				}
+				
+				Normal
+				{
+					0 = "Materials/Textures/iron_norm.tga"
+				}
+			}
+			
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			
+			Placeable
+			{
+				name = "Iron Ore Clump"
+				icon = "Iron_Ore_Clump"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "GravelPlace"
+				removalSound = "GravelDig"
+				miningEmitter = "Strike Rock Dirt Emitter"
+				category = "Rock"
+				tier = 3
+				resource = 1
+				maxStackCount = 100
+			}
+		}
+	}
+}

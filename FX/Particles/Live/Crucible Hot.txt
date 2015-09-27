@@ -1,0 +1,29 @@
+Particles
+{
+
+	CrucibleHot
+	{
+		textureName = "FX/Textures/puff1.tga"
+		textureSize = 256
+		elasticity = 0.0
+		addColor = <1.0,1.0,1.0>
+		multiplyColor = <0.9,0.87,0.86>
+		rotationSpeed = 0.0
+		scaling = <0.8,0.8,0.8>
+		scalingSpeed = <0.3, 0.3, 0.3>
+		scalingType = "multiply"
+		scalingVariance = 0.005
+		acceleration = <0.0, 0, 0.0>
+		maxAge = 1.5
+		ageVariance = 1.25
+		ageToStartFading = 0.1
+		ageToStartShrinking = 0.0
+		fadeInAge = 2.0
+		growInAge = 0.5
+		blendType = "default"
+		speedCap = 1.0
+		orientation = "normal"
+	}
+
+
+}

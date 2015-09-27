@@ -1,0 +1,115 @@
+﻿{
+	FX
+	{
+		Smoke LargeFurnace Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				Smoke1
+				{
+					rate = 12
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1.0f, 0.0f>
+					velocityVariance = <0.0f, .5f, 0.0f>
+					rotation = 0.5
+					rotationVariance = 180
+					type = "spherical"
+					radius = 2.2
+					emitFrom = "volume"
+					randomizeAtSpawn				
+				}
+
+				EmbersFurnace
+				{
+					rate = 10
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1f, 0.0f>
+					velocityVariance = <0.0f, 0.5f, 0.0f>
+					rotation = 0.4
+					rotationVariance = 360
+					type = "spherical"
+					radius = 2.1
+					emitFrom = "volume"
+					randomizeAtSpawn					
+				}
+			}
+			Transform      
+			{
+			}
+		}
+
+		Fire LargeFurnace Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				Flame1_01
+				{
+					rate = 30
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1.0f, 0.0f>
+					velocityVariance = <0.0f, .5f, 0.0f>
+					rotation = 0.5
+					rotationVariance = 90
+					type = "spherical"
+					radius = 1.1
+					emitFrom = "volume"
+					randomizeAtSpawn						
+				}
+				Flame1_02
+				{
+					rate = 30
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1.0f, 0.0f>
+					velocityVariance = <0.0f, .5f, 0.0f>
+					rotation = 0.5
+					rotationVariance = 90
+					type = "spherical"
+					radius = 1.1
+					emitFrom = "volume"
+					randomizeAtSpawn						
+				}
+				Flame1_03
+				{
+					rate = 30
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1.0f, 0.0f>
+					velocityVariance = <0.0f, .5f, 0.0f>
+					rotation = 0.5
+					rotationVariance = 90
+					type = "spherical"
+					radius = 1.1
+					emitFrom = "volume"
+					randomizeAtSpawn						
+				}				
+			}
+			Transform
+			{
+			}
+		}
+		
+		
+	}
+}

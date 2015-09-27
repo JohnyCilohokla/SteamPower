@@ -1,0 +1,65 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Automatic Furnace
+		{
+			Script
+			{
+				file = "Scripts/Objects/AutomaticFurnace.lua"
+				class = "AutomaticFurnace"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Auto_Furnace_2.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Auto_Furnace_2_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Auto_Furnace_2_norm.tga"
+				}
+				Glow
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Auto_Furnace_2_glow.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Automatic Furnace"
+				icon = "Automatic_Furnace"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

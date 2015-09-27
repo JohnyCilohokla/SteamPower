@@ -1,0 +1,67 @@
+GameObjects
+{
+	PlaceableMaterialData
+	{
+		Cliff Rock Dark
+		{
+			Script
+			{
+				file = "Scripts/PlaceableMaterial.lua"
+				class = "PlaceableMaterial"
+				
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			
+			PlaceableMaterial
+			{
+				material = "Cliff Rock Dark"
+				//icon = "NoIcon"
+				gridSizeX = 1
+				gridSizeY = 1
+				
+				category = "Rock"
+				tier = 2
+				objectRep = "Cobblestone"
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 2.0
+
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				stepSound = "StepStone"
+				miningEmitter = "Strike Rock Grey Emitter"
+				miningEmitterAlt = "Strike ClayBrown Emitter"
+				
+				Drops
+				{
+					Tin Ore
+					{
+						dropChance = 0.005
+						dropMinAmount = 0
+						dropMaxAmount = 1
+					}	
+					Copper Ore
+					{
+						dropChance = 0.005
+						dropMinAmount = 0
+						dropMaxAmount = 1
+					}
+					Iron Ore Clump
+					{
+						dropChance = 0.005
+						dropMinAmount = 0
+						dropMaxAmount = 1
+					}
+					Coal
+					{
+						dropChance = 0.005
+						dropMinAmount = 0
+						dropMaxAmount = 1
+					}		
+				}
+			}
+		}
+	}
+}

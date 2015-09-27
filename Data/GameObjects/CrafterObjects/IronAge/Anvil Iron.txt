@@ -1,0 +1,63 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Iron Anvil
+		{
+			Script
+			{
+				file = "Scripts/Objects/SPAnvil.lua"
+				class = "SPAnvil"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Anvil_Iron.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Anvil_Iron_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Anvil_Iron_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Iron Anvil"
+				icon = "Anvil_Iron"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 4
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Conveyor Belt
+		{
+			Script
+			{
+				file = "Scripts/Objects/ConveyorBelt.lua"
+				class = "ConveyorBelt"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Conveyor_Belt.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Conveyor_Belt_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Conveyor_Belt_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Conveyor Belt"
+				icon = "Conveyor_Belt"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

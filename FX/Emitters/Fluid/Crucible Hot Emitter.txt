@@ -1,0 +1,49 @@
+﻿{
+	FX
+	{
+		Crucible Hot Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				CrucibleHot
+				{
+					rate = 12
+					rateVariance = 2							
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 0.8f, 0.0f>
+					velocityVariance = <0.1f, 0.5f, 0.1f>
+					rotation = 3
+					rotationVariance = -360
+				    type = "point"				
+				}
+				EmbersQuarter
+				{
+					rate = 5
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 0.9f, 0.0f>
+					velocityVariance = <0.4f, 0.3f, 0.4f>
+					rotation = 3
+					rotationVariance = 360
+					type = "spherical"
+					radius = 0.3
+					emitFrom = "volume"
+					randomizeAtSpawn					
+				}
+
+			}
+			Transform
+			{
+
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Bronze Anvil
+		{
+			Script
+			{
+				file = "Scripts/Objects/SPAnvil.lua"
+				class = "SPAnvil"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/CrafterObjects/Anvil_Bronze.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Anvil_Bronze_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/CrafterObjects/Anvil_Bronze_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 1.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Bronze Anvil"
+				icon = "Anvil_Bronze"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "MetalDig"
+				removalSound = "MetalDig"
+				miningEmitter = "Strike Glint Emitter"
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 4
+			}
+		}
+	}
+}

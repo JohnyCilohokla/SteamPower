@@ -1,0 +1,97 @@
+
+{
+	PlaceableObject
+	{
+		Rubber Tree
+		{
+			Script
+			{
+				file = "Scripts/Objects/RubberTree.lua"
+				class = "RubberTree"
+				arguments
+				{
+					encumbrance = 1
+					LiquidProvider
+					{
+						liquid = "Resin"
+						amount = 1
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Trees/Rubber_Tree.obj"
+				useAlphaShadows = 1
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Trees/Rubber_Tree_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Trees/Rubber_Tree_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 100
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Rubber Tree"
+				icon = "Rubber_Tree"
+				minScale = 0.3
+				maxScale = 1.5
+				placementSound = "GrassPlace"
+				removalSound = "GrassDig"
+				miningEmitter = "Strike WoodHard Emitter"
+				miningEmitterAlt = "Strike LeafBipinnateGreen Emitter"
+				health = 120
+				durabilityLossOnCorrect = 2.0
+				durabilityLossOnIncorrect = 8.0
+				category = "Wood"
+				tier = 2
+				Drops
+				{
+					Forked Stick
+					{
+						dropChance = 0.5
+						dropMinAmount = 0
+						dropMaxAmount = 2
+					}
+					Wood Shaft
+					{
+						dropChance = 0.5
+						dropMinAmount = 0
+						dropMaxAmount = 2
+					}
+					Wood Branch
+					{
+						dropChance = 0.5
+						dropMinAmount = 0
+						dropMaxAmount = 2
+					}
+					Wood Log Acacia Chunk 1
+					{
+						dropMinAmount = 1
+						dropMaxAmount = 1
+						dropChance = 1.0
+					}
+				}
+			}
+		}
+	}
+}

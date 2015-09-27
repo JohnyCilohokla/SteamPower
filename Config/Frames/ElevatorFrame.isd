@@ -1,0 +1,290 @@
+{
+	"$": "IGC",
+	"name": "ElevatorFrame",
+	"targets": [
+		{
+			"$": "IGCTarget",
+			"ingredients": ["Bronze Sheet"],
+			"locations": [
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 0.8999999999999999,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 0.9999999999999999,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 1.0999999999999999,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 1.2000000000000002,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			],
+			"name": "Frame"
+		},
+		{
+			"$": "IGCTarget",
+			"ingredients": ["Iron Sheet"],
+			"locations": [
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 4.800000000000002,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 4.700000000000003,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 4.900000000000002,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 5.200000000000002,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 5.100000000000002,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0,
+						"y": 5.000000000000003,
+						"z": 0
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			],
+			"name": "Frame2"
+		},
+		{
+			"$": "IGCTarget",
+			"ingredients": ["Bronze Cog"],
+			"locations": [
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 2.7755575615628914E-17,
+						"y": 1.5000000000000002,
+						"z": -1.8999999999999995
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": -2.7755575615628914E-17,
+						"y": 1.6000000000000003,
+						"z": -1.9000000000000008
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			],
+			"name": "Gears"
+		},
+		{
+			"$": "IGCTarget",
+			"ingredients": ["Nails and Screws"],
+			"locations": [
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0.8999999999999999,
+						"y": 1.6000000000000003,
+						"z": 1.6999999999999993
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": 0.3,
+						"y": 1.6,
+						"z": 1.6999999999999993
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1.0000000000000002,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": -0.30000000000000004,
+						"y": 1.6000000000000003,
+						"z": 1.6999999999999993
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1.0000000000000002,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"$": "IGCLocation",
+					"position": {
+						"$": "Vec3D",
+						"x": -0.8999999999999999,
+						"y": 1.6000000000000003,
+						"z": 1.6999999999999993
+					},
+					"rotation": {
+						"$": "Quat",
+						"w": 1.0000000000000002,
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			],
+			"name": "Screws"
+		}
+	]
+}

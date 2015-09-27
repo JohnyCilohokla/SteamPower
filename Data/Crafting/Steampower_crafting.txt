@@ -1,0 +1,2021 @@
+All Recipes
+{
+
+//FRAMES
+
+	Sheet Table Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			priority = 3
+			
+			Components
+			{
+				Part1
+				{
+					"Vines" = 4
+				}
+				
+				Part2
+				{
+					"Wood Shaft" = 5
+				}
+	
+			}
+			
+			Results
+			{
+				"Sheet Table Frame" = 1
+			}
+
+		}
+	}
+	
+	Pottery Wheel Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 10
+					"Wood Plank" = 10
+				}
+				
+				Part2
+				{
+					"Wood Shaft" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Pottery Wheel Frame" = 1
+			}
+
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	Large Furnace Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Shaft" = 4
+				}
+				Part2
+				{
+					"Cobblestone" = 15
+				}
+
+			}
+
+			
+			Results
+			{
+				"Large Furnace Frame" = 1
+			}
+		}
+	}
+	
+	Improved Workbench Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			priority = 2.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Stacked Wood" = 80
+					"Wood Plank" = 80
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Improved Workbench Frame" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Conveyor Belt Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Strips" = 4
+				}
+				Part3
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Conveyor Belt Frame" = 1
+			}
+		}
+	}
+	
+	Conveyor Ramp Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 7
+				}
+				Part2
+				{
+					"Iron Strips" = 5
+				}
+				Part3
+				{
+					"Iron Rod" = 2
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Conveyor Ramp Frame" = 1
+			}
+		}
+	}
+	
+	T Sorter Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Sheet" = 2
+				}
+				Part3
+				{
+					"Iron Rod" = 4
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"T Sorter Frame" = 1
+			}
+		}
+	}
+	
+	Elevator Frame Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Sheet" = 3
+				}
+				Part3
+				{
+					"Iron Strips" = 2
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Elevator Frame" = 1
+			}
+		}
+	}
+	
+//CRAFTING STATIONS
+
+	Anvil Stand Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Stacked Wood" = 50
+					"Wood Plank" = 50
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Anvil Stand" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 9.0
+				}
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 9.0
+				}
+			}
+		}
+	}
+
+    Casting L Box Wooden Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			priority = 3
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 30
+					"Wood Plank" = 30
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting L Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	    Casting M Box Wooden Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			priority = 2
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 20
+					"Wood Plank" = 20
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting M Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	    Casting S Box Wooden Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			priority = 1
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 10
+					"Wood Plank" = 10
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting S Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Sheet Table Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Sheet Table Frame" = 1
+				}
+				
+				Part2
+				{
+					"Clay Clump" = 30
+				}
+	
+			}
+			
+			Results
+			{
+				"Sheet Table" = 1
+			}
+
+		}
+	}
+
+	Bronze Bellows Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+				
+				Part2
+				{
+					"Leather Strips" = 2
+				}
+
+				Part3
+				{
+					"Stacked Wood" = 4
+					"Wood Plank" = 4
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Bronze Bellows" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Wooden Bowl Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+				    "Chopped Wood" = 2
+					"Stacked Wood" = 6
+					"Wood Plank" = 6
+				}
+			}
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 0
+			}
+			Results
+			{
+				"Wooden Bowl" = 1
+			}
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+		Pottery Wheel Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+				    "Pottery Wheel Frame" = 1
+				}
+				
+				Part2
+				{
+					"Stacked Wood" = 15
+					"Wood Plank" = 15
+				}
+				
+				Part3
+				{
+					"Wood Shaft" = 6
+				}
+				
+				Part4
+				{
+					"Wooden Bowl" = 1
+				}
+				
+				Part5
+				{
+					"Clay Clump" = 5
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Pottery Wheel" = 1
+			}
+		}
+	}
+	
+	Improved Workbench Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+
+				Part1
+				{
+				 "Improved Workbench Frame" = 1
+				}
+				
+				Part2
+				{
+					"Stacked Wood" = 20
+					"Wood Plank" = 20
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Improved Workbench" = 1
+			}
+		}
+	}
+	
+	Large Furnace Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Large Furnace Frame" = 1
+				}
+				Part2
+				{
+					"Cobblestone" = 20
+				}
+				Part3
+				{
+					"Clay Clump" = 20
+				}
+				Part4
+				{
+					"Coal" = 1
+				}
+				Part5
+				{
+					"Iron Strips" = 2
+				}
+			}
+			Results
+			{
+				"Large Furnace Lit" = 1
+			}
+		}
+	}
+
+//POTTERY WHEEL CRAFTING	
+	
+	Clay Jar New Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Crucible New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+
+			}
+			
+			Results
+			{
+				"Clay Jar New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 3.5, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+    Casting Cylinder New Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Jar New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+
+			}
+			
+			Results
+			{
+				"Casting Cylinder New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+    Crucible New Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Casting Cylinder New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+			}
+			
+			Results
+			{
+				"Crucible New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Pottery Start Crucible New Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Clump" = 2
+				}
+			}
+			
+			Results
+			{
+				"Crucible New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+//POTTERY FIRING
+	
+	Crucible Empty Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Crucible New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Crucible Empty" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	
+	Clay Jar Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Jar New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Clay Jar" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	
+	Casting Cylinder Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Casting Cylinder New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Casting Cylinder" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+
+//TOOLS	
+
+	Wooden Mallet Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Forked Stick" = 1
+				}
+				
+				Part2
+				{
+					"Wood Branch" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wooden Mallet" = 1
+			}
+
+			Crafting Stations
+			{
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Iron Wrench Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 8.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 3
+				}
+				
+				Part2
+				{
+					"Nails and Screws" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Iron Wrench" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Bronze Shears Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Knife Blade" = 2
+				}
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Bronze Shears" = 1
+			}
+
+			Crafting Stations
+			{
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Stone Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Crucible Fork Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Rod" = 2
+				}
+				Part2
+				{
+					"Leather Strips" = 1
+				}
+				Part3
+				{
+					"Iron Strips" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Crucible Fork" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+//COMPONENTS	
+
+	Bronze Cog Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Cog" = 4
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Iron Strips Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Sheet" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Strips" = 8
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Girder Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 2
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Girder" = 1
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Nails and Screws Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Nails and Screws" = 2
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Bronze Tube Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Tube" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	Iron Tube Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Sheet" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Tube" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+    Bronze Rod Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Tube" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Rod" = 3
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	Iron Rod Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Tube" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Rod" = 3
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	
+//PLASTER CASTS	
+	
+	Plaster Cast Axe Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+				    "Jagged Rock" = 1
+					"Crude Axe" = 1
+					"Bronze Axe Head" = 1
+					"Bronze Axe" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Axe" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+    Plaster Cast Hammer Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+				    "Round Rock" = 1
+					"Crude Hammer" = 1
+					"Bronze Hammer Head" = 1
+					"Bronze Hammer" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Hammer" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Pick Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 2
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+					"Crude Pick" = 1
+					"Bronze Pick Head" = 1
+					"Bronze Pick" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Pick" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting S Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Knife Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+				    "Small Rock Spire" = 1
+					"Flint Head" = 1
+					"Crude Knife" = 1
+					"Bronze Knife Blade" = 1
+					"Bronze Knife" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Knife" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+		Plaster Cast Spear Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+					"Wood Spear" = 1
+					"Bronze Spear Head" = 1
+					"Bronze Spear" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Spear" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Shovel Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+					"Crude Shovel" = 1
+					"Bronze Shovel Head" = 1
+					"Bronze Shovel" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Shovel" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+		Plaster Cast Hoe Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+					"Crude Hoe" = 1
+					"Bronze Hoe Head" = 1
+					"Bronze Hoe" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Hoe" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+			Plaster Cast Sword Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 3
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+					"Crude Sword" = 1
+					"Bronze Sword Blade" = 1
+					"Bronze Sword" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Sword" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting M Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+				Plaster Cast Anvil Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 4
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2 
+				{
+				    "Stone Anvil" = 1
+					"Bronze Anvil" = 1
+					"Iron Anvil" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Anvil" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting L Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+
+	
+}

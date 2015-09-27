@@ -1,0 +1,65 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Large Furnace Frame
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableObject.lua"
+				class = "CLPlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Frames/Large_Furnace_Frame.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Frames/Large_Furnace_Frame_diff.tga"
+					1 = "Character/Weapons/0spearB_WLV_New_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Frames/Large_Furnace_Frame_norm.tga"
+					1 = "Character/Weapons/0spearB_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Large Furnace Frame"
+				icon = "Large_Furnace_Frame"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Grey Emitter"
+				miningEmitterAlt = "Strike WoodLight Emitter"
+				category = "Table"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+			}
+		}
+	}
+}

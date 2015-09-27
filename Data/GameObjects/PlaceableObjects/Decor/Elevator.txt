@@ -1,0 +1,225 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Elevator Base
+		{
+			Script
+			{
+				file = "Scripts/Objects/ElevatorBase.lua"
+				class = "ElevatorBase"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Elevator_Base.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "T Sorter"
+				icon = "Elevator_Base"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+		Elevator Shield
+		{
+			Script
+			{
+				file = "Scripts/Objects/ElevatorShields.lua"
+				class = "ElevatorShields"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Elevator_Shield.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "T Sorter"
+				icon = "Elevator_Shield"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+		Elevator Middle
+		{
+			Script
+			{
+				file = "Scripts/Objects/ElevatorMiddle.lua"
+				class = "ElevatorMiddle"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Elevator_Middle.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "T Sorter"
+				icon = "Elevator_Middle"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+		Elevator Top
+		{
+			Script
+			{
+				file = "Scripts/Objects/ElevatorTop.lua"
+				class = "ElevatorTop"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/Elevator_Top.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Elevator_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "T Sorter"
+				icon = "Elevator_Top"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

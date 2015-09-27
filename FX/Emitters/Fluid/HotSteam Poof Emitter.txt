@@ -1,0 +1,66 @@
+﻿{
+	FX
+	{
+		HotSteam Poof Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				HotSteam_Puff01
+				{
+					rate = 7
+					rateVariance = 1					
+					oscillation = 10
+					start = 0
+					stop = .85
+					velocity = <0.0f, 14.0f, 0.0f>
+					velocityVariance = <2.0f, 0.0f, 2.0f>
+					rotation = 0
+					rotationVariance = 180
+					type = "point"
+					randomizeAtSpawn					
+				}
+				#Main
+
+				HotSteam_Puff02
+				{
+					rate = 2
+					rateVariance = 1					
+					oscillation = 10
+					oscillation = 10
+					start = 0
+					stop = .2
+					velocity = <0.0f, 14.0f, 0.0f>
+					velocityVariance = <1.0f, 0.0f, 1.0f>
+					rotation = 0.5
+					rotationVariance = 180
+					type = "point"
+					randomizeAtSpawn					
+				}
+				#Initial Puff			
+
+				HotSteam_Puff03
+				{
+					rate = 4
+					rateVariance = 1					
+					oscillation = 10
+					start = 0
+					stop = .85
+					velocity = <0.0f, 1.0f, 0.0f>
+					velocityVariance = <1.0f, 0.0f, 1.0f>
+					rotation = 0
+					rotationVariance = 180
+					type = "point"
+					randomizeAtSpawn					
+				}
+				#Fumarole.		
+			}
+			Transform
+			{
+			}	
+		}
+	}
+}

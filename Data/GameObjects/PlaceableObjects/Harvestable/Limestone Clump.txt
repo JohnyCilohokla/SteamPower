@@ -1,0 +1,66 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Limestone Clump
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableMaterial.lua"
+				class = "CLPlaceableMaterial"
+				arguments
+				{
+					encumbrance = 0.025
+					ModificationInput
+					{
+						"modificationType" = "Place"
+						"dimensions" = <1.0,1.0,1.0>
+						"radius" = 1.0
+						"brushType" = "Sphere"
+					}
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Harvestables/clutterLumps.obj"
+				Diffuse
+				{
+					0 = "Materials/Textures/Limestone_diff.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 62.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "Limestone Clump"
+				icon = "Limestone_Clump"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Dirt Emitter"
+				category = "Rock"
+				tier = 2
+				resource = 1
+				maxStackCount = 256
+				materialRep = "Limestone"
+			}
+		}
+	}
+}

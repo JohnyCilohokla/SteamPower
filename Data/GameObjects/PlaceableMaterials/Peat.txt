@@ -1,0 +1,38 @@
+﻿
+{
+
+	PlaceableMaterialData
+	{
+
+		Peat
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableMaterial.lua"
+				class = "CLPlaceableMaterial"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			
+			PlaceableMaterial
+			{
+				material = "Peat"
+				icon = "Materials/Textures/Peat_diff.tga"
+				gridSizeX = 1
+				gridSizeY = 1
+				placementSound = "GrassPlace"
+				removalSound = "GrassDig"
+				stepSound = "StepGrass"
+				miningEmitter = "Strike GrassC Emitter"
+				durabilityLossOnCorrect = 0.5
+				durabilityLossOnIncorrect = 1.0
+				
+				category = "Dirt"
+				tier = 1
+				objectRep = "Peat Clump"
+			}
+		}
+	}
+}

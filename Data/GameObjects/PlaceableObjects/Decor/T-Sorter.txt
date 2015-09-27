@@ -1,0 +1,61 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		T Sorter
+		{
+			Script
+			{
+				file = "Scripts/Objects/TSorter.lua"
+				class = "TSorter"
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/T_Sorter.obj"
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/T_Sorter_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/T_Sorter_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Placeable
+			{
+				name = "T Sorter"
+				icon = "T_Sorter"
+				minScale = 1.0
+				maxScale = 1.0
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				miningEmitter = "Strike Rock Yellow Emitter"
+				category = "Vegetation"
+				tier = 4
+				resource = 1
+				placeWithNoPhysics = 1
+				tetherDistanceModifier = 2.0
+				survivalPosOffset = <0.0, 0.0, 0.0>
+				survivalFaceCamera = 1
+			}
+		}
+	}
+}

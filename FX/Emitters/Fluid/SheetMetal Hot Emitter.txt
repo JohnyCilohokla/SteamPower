@@ -1,0 +1,52 @@
+﻿{
+	FX
+	{
+		SheetMetal Hot Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				SheetMetalHot
+				{
+					rate = 5
+					rateVariance = 2							
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1.1f, 0.0f>
+					velocityVariance = <0.1f, 0.6f, 0.1f>
+					rotation = 3
+					rotationVariance = -360
+					type = "radial"
+				    radius = 2.0
+					emitFrom = "volume"
+					randomizeAtSpawn					
+				}
+				EmbersQuarter
+				{
+					rate = 18
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1f, 0.0f>
+					velocityVariance = <0.8f, 0.5f, 0.8f>
+					rotation = 3
+					rotationVariance = 360
+					type = "spherical"
+					radius = 2.5
+					emitFrom = "volume"
+					randomizeAtSpawn					
+				}
+
+			}
+			Transform
+			{
+
+			}
+		}
+	}
+}

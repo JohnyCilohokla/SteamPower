@@ -1,0 +1,73 @@
+GameObjects
+{
+	Equipable
+	{
+		Iron Shears
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/CLEquipable.lua"
+				class = "CLEquipable"
+				arguments
+				{
+					incorrectTierCap = 0
+				}
+			}
+			StaticGraphics
+			{
+				model = "Character/Tools/Shears.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Character/Tools/Iron_Shears_diff.tga"
+				}
+				Normal
+				{
+					0 = "Character/Tools/Shears_norm.tga"
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 15.0
+						convex = 0
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			Equipable
+			{
+				name = "Iron Shears"
+				minScale = 1.0
+				maxScale = 1.0
+				icon = "Iron_Shears"
+				miningEmitter = "Strike Glint Emitter"
+				miningEmitterAlt = "Strike EmbersQuarter Emitter"
+				category = "Shears"
+				tier = 3
+				damageToCharacters = 10
+				damageToObjects = 30
+				creakingSound = "ItemCreak"
+				breakSound = "ItemBreak"
+				impactFailSound = "MetalDig"
+				durability = 240.0
+				durabilityCreakingPoint = 16.0
+				maxStackCount = 1
+				resource = 1
+				Equipment Slots
+				{
+					Tool
+				}
+			}
+		}
+	}
+}

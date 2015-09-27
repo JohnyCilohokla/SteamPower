@@ -1,0 +1,30 @@
+root
+{
+	Textures
+	{
+		Peat
+		{
+			diffuse = "Peat_diff.tga"
+			normal = "Peat_bump.tga"
+			scale = 8
+		}
+		Dry Peat
+		{
+			diffuse = "Peat_Dry_diff.tga"
+			normal = "Peat_Dry_bump.tga"
+			scale = 8
+		}
+		Limestone Powder
+		{
+			diffuse = "Limestone_Powder_diff.tga"
+			normal = "Limestone_Powder_bump.tga"
+			scale = 8
+		}
+		Limestone
+		{
+			diffuse = "Limestone_diff.tga"
+			normal = "Limestone_bump.tga"
+			scale = 8
+		}
+	} 
+}

@@ -1,0 +1,81 @@
+﻿{
+	FX
+	{
+		HotSteam Emitter
+		{
+			Emitter
+			{
+				type = "Fluid"
+				lifespan = 999999
+				endless
+
+				HotSteam_Puff1
+				{
+					rate = 32
+					rateVariance = 2							
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 0.0f, 0.0f>
+					velocityVariance = <0.25f, 0.25f, 0.25f>
+					rotation = 0
+					rotationVariance = -360
+					type = "point"
+					randomizeAtSpawn				
+				}
+
+				HotSteam_Puff2
+				{
+					rate = 32
+					rateVariance = 2							
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 0.0f, 0.0f>
+					velocityVariance = <0.25f, 0.25f, 0.25f>
+					rotation = 0
+					rotationVariance = -360
+					type = "point"
+					randomizeAtSpawn				
+				}				
+
+				HotSteam_Puff3
+				{
+					rate = 16
+					rateVariance = 2							
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 0.0f, 0.0f>
+					velocityVariance = <0.25f, 0.25f, 0.25f>
+					rotation = 0
+					rotationVariance = -360
+					type = "point"
+					randomizeAtSpawn				
+				}
+
+				EmbersQuarter
+				{
+					rate = 16
+					rateVariance = 2					
+					oscillation = 100
+					start = 0
+					stop = 1
+					velocity = <0.0f, 1f, 0.0f>
+					velocityVariance = <0.8f, 0.5f, 0.8f>
+					rotation = 1
+					rotationVariance = 360
+					type = "spherical"
+					radius = 0.5
+					emitFrom = "volume"
+					randomizeAtSpawn					
+				}
+
+			}
+			Transform
+			{
+
+			}
+		}
+	}
+}

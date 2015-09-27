@@ -1,0 +1,38 @@
+﻿
+{
+
+	PlaceableMaterialData
+	{
+
+		Limestone Powder
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableMaterial.lua"
+				class = "CLPlaceableMaterial"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			
+			PlaceableMaterial
+			{
+				material = "Limestone Powder"
+				icon = "Materials/Textures/Limestone_Powder_diff.tga"
+				gridSizeX = 1
+				gridSizeY = 1
+				placementSound = "StonePlace"
+				removalSound = "StoneDig"
+				stepSound = "StepStone"
+				miningEmitter = "Strike Rock Grey Emitter"
+				durabilityLossOnCorrect = 0.5
+				durabilityLossOnIncorrect = 1.0
+				
+				category = "Rock"
+				tier = 1
+				objectRep = "Limestone Powder Clump"
+			}
+		}
+	}
+}

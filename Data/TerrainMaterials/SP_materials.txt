@@ -1,0 +1,22 @@
+root
+{
+	Materials
+	{
+		Peat
+		{
+			texture = "Peat"
+		}
+		Dry Peat
+		{
+			texture = "Dry Peat"
+		}
+		Limestone Powder
+		{
+			texture = "Limestone Powder"
+		}
+		Limestone
+		{
+			texture = "Limestone"
+		}
+	}
+}

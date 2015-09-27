@@ -1,0 +1,37 @@
+﻿
+{
+
+	PlaceableMaterialData
+	{
+
+		Iron Ore
+		{
+			Script
+			{
+				file = "Scripts/Objects/CLPlaceableMaterial.lua"
+				class = "CLPlaceableMaterial"
+				arguments
+				{
+					encumbrance = 1
+				}
+			}
+			
+			PlaceableMaterial
+			{
+				material = "Iron Ore"
+				gridSizeX = 1
+				gridSizeY = 1
+				placementSound = "StonePlace"
+				removalSound = "MetalDig"
+				stepSound = "StepStone"
+				miningEmitter = "Strike Rock Grey Emitter"
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 2.0
+				
+				category = "Ore"
+				tier = 3
+				objectRep = "Iron Ore"
+			}
+		}
+	}
+}

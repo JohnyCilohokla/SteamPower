@@ -1,0 +1,32 @@
+﻿
+Sound
+{
+
+	3DSounds
+	{
+		SP_AnvilCrafting01
+		{
+			"Sound/Tools/Anvil01.ogg"
+		}
+		SP_AnvilCrafting02
+		{
+			"Sound/Tools/Anvil02.ogg"
+		}
+		SP_AnvilCrafting03
+		{
+			"Sound/Tools/Anvil03.ogg"
+		}
+		SP_AnvilCrafting04
+		{
+			"Sound/Tools/Anvil04.ogg"
+		}
+	}
+
+	UISounds
+	{
+	}
+
+	StereoSounds
+	{
+	}
+}

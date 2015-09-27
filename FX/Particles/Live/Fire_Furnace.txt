@@ -1,0 +1,30 @@
+﻿
+Particles
+{
+
+
+	
+	EmbersFurnace
+	{
+		textureName = "FX/Textures/spark.tga"
+		textureSize = 256
+		elasticity = 0.0
+		addColor = <0.0, 0.0, 0.0>
+		multiplyColor = <1.0, 1.0, 1.0>
+		rotationSpeed = 0.25
+		scaling = <1.3, 1.3, 1.3>
+		scalingSpeed = <0.7, 0.7, 0.7>
+		scalingType = "multiply"
+		scalingVariance = 0
+		acceleration = <0, 0, 0>
+		maxAge = 1.75
+		ageVariance = .75
+		ageToStartFading = .5
+		ageToStartShrinking = -.5
+		fadeInAge = 0
+		growInAge = 0
+		blendType = "additive"
+		speedCap = 100
+		orientation = "normal"
+	}	
+}
