@@ -27,10 +27,10 @@ GameObjects
 					0 = "Materials/Textures/iron_diff.tga"
 				}
 				
-				Normal
-				{
-					0 = "Materials/Textures/iron_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Materials/Textures/iron_norm.tga"
+				#}
 			}
 			
 			Physics

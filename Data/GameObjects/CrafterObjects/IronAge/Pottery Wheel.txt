@@ -28,7 +28,7 @@ GameObjects
 				Normal
 				{
 					0 = "Models/PlaceableObjects/CrafterObjects/Pottery_Wheel_norm.tga"
-					1 = "Models/PlaceableObjects/CrafterObjects/Pottery_Wheel_Bowl_norm.tga"
+					#1 = "Models/PlaceableObjects/CrafterObjects/Pottery_Wheel_Bowl_norm.tga"
 				}
 			}
 			Physics

@@ -24,10 +24,10 @@ GameObjects
 				{
 					0 = "Models/PlaceableObjects/Refined/Girder_diff.tga"
 				}
-				Normal
-				{
-					0 = "Models/PlaceableObjects/Refined/Girder_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Models/PlaceableObjects/Refined/Girder_norm.tga"
+				#}
 			}
 			Physics
 			{

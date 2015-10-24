@@ -24,10 +24,10 @@ GameObjects
 				{
 					0 = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame_diff.tga"
 				}
-				Normal
-				{
-					0 = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Models/PlaceableObjects/Frames/Conveyor_Ramp_Frame_norm.tga"
+				#}
 			}
 			Physics
 			{

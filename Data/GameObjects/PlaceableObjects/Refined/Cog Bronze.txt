@@ -24,10 +24,10 @@ GameObjects
 				{
 					0 = "Models/PlaceableObjects/Refined/Cog_Bronze_diff.tga"
 				}
-				Normal
-				{
-					0 = "Models/PlaceableObjects/Refined/Cog_Bronze_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Models/PlaceableObjects/Refined/Cog_Bronze_norm.tga"
+				#}
 			}
 			Physics
 			{

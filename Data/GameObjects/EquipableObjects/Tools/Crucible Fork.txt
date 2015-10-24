@@ -24,10 +24,10 @@ GameObjects
 				{
 					0 = "Character/Tools/Crucible_Fork_diff.tga"
 				}
-				Normal
-				{
-					0 = "Character/Tools/Crucible_Fork_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Character/Tools/Crucible_Fork_norm.tga"
+				#}
 			}
 			Physics
 			{

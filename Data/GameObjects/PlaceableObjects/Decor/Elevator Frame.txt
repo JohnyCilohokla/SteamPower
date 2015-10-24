@@ -39,10 +39,10 @@ GameObjects
 				{
 					0 = "Models/PlaceableObjects/Frames/Elevator_Frame_diff.tga"
 				}
-				Normal
-				{
-					0 = "Models/PlaceableObjects/Frames/Elevator_Frame_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Models/PlaceableObjects/Frames/Elevator_Frame_norm.tga"
+				#}
 			}
 			Physics
 			{

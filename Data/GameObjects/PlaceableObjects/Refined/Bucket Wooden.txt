@@ -20,14 +20,14 @@ GameObjects
 			{
 				model = "Models/PlaceableObjects/Refined/Bucket_Wooden.obj"
 				dontCastShadows = 1.0
-				Diffuse
-				{
-					0 = "Models/PlaceableObjects/Refined/Bucket_Wooden_diff.tga"
-				}
-				Normal
-				{
-					0 = "Models/PlaceableObjects/Refined/Bucket_Wooden_norm.tga"
-				}
+				#Diffuse
+				#{
+				#	0 = "Models/PlaceableObjects/Refined/Bucket_Wooden_diff.tga"
+				#}
+				#Normal
+				#{
+				#	0 = "Models/PlaceableObjects/Refined/Bucket_Wooden_norm.tga"
+				#}
 			}
 			Physics
 			{

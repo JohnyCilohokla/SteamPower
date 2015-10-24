@@ -24,10 +24,10 @@ GameObjects
 				{
 					0 = "Character\Weapons\0spearB_WFR_New_diff.tga"
 				}
-				Normal
-				{
-					0 = "Character\Weapons\0spearB_WFR_New_norm.tga"
-				}
+				#Normal
+				#{
+				#	0 = "Character\Weapons\0spearB_WFR_New_norm.tga"
+				#}
 			}
 			Physics
 			{
