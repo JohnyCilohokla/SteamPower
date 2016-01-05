@@ -46,7 +46,7 @@ end
 -------------------------------------------------------------------------------
 function ElevatorBase:Despawn()
 	CL.println ("ElevatorBase:Despawn()")
-	local attachments = self:NKGetChildren();
+	local attachments = self:NKGetChildren()
 	for attachmentsID, attachmentsData in pairs(attachments) do 
 		if attachmentsData:NKGetName() == "Elevator Shield" then
 			self:NKRemoveChildObject(attachmentsData)
@@ -65,7 +65,7 @@ end
 
 function ElevatorBase:InitializeShield()
 	self.shield=nil
-	local attachments = self:NKGetChildren();
+	local attachments = self:NKGetChildren()
 	for attachmentsID, attachmentsData in pairs(attachments) do 
 		if attachmentsData:NKGetName() == "Elevator Shield" then
 			self:NKRemoveChildObject(attachmentsData)
@@ -75,15 +75,14 @@ function ElevatorBase:InitializeShield()
 	end
 	if (self.shield==nil) then
 		self.shield = Eternus.GameObjectSystem:NKCreateGameObject("Elevator Shield", true)
-		self:NKAddChildObject(self.shield);
+		self:NKAddChildObject(self.shield)
 		self.shield:NKSetPosition(vec3.new(0,0.0,0), false)
 		self.shield:NKSetOrientation(quat.new(1,0,0,0))
 		
 		self.shield:NKPlaceInWorld(true, false)
 		
-		self.shield = self.shield:NKGetInstance()
 		self.shield:SetBase(self)
-		self.shield:NKGetPhysics():NKDeactivate();
+		self.shield:NKGetPhysics():NKSetMotionType(PhysicsComponent.KEYFRAMED)
 	end
 	--self.shield:NKGetNet():NKForceGlobalRelevancy(true)
 	--self.shield:NKGetNet():NKDisableAutoRelevancy(false)
@@ -114,28 +113,28 @@ function ElevatorBase:Update(dt)
 		elseif(self.m_shieldTimer>=11 and self.m_shieldTimer < 14) then
 			self:setShieldPosition(vec3.new(0,1.75,0))
 			if Eternus.IsServer then
-				local parentPosition = self:NKGetWorldPosition();
-				local rotation = self:NKGetWorldOrientation();
+				local parentPosition = self:NKGetWorldPosition()
+				local rotation = self:NKGetWorldOrientation()
 				
-				local localPosition = vec3.new(0,2.2,0);
-				local localRotation = quat.new(1,0,0,0);
+				local localPosition = vec3.new(0,2.2,0)
+				local localRotation = quat.new(1,0,0,0)
 				
-				local sides = {distX = 1.7,distY = 1.4,distZ = 1.7};
+				local sides = {distX = 1.7,distY = 1.4,distZ = 1.7}
 				local input = getQBB(parentPosition, localPosition, rotation, localRotation, sides)
 				
 				for inputID,inputData in pairs(input) do
 					for itemID,itemData in pairs(inputData) do
 						if itemData:NKGetName() ~= "Elevator Base" and itemData:NKGetParent()==nil then
 							-- TODO simplify
-							local topConnection = self:getConnection("Top");
+							local topConnection = self:getConnection("Top")
 							while (topConnection~=nil and topConnection.object:NKGetName() == "Elevator Middle") do
-								topConnection = topConnection.object:getConnection("Top");
+								topConnection = topConnection.object:getConnection("Top")
 							end
 							if (topConnection~=nil and topConnection.object:NKGetName() == "Elevator Top") then
 							
-								local parentPosition = topConnection.object:NKGetWorldPosition();
-								local rotation = topConnection.object:NKGetWorldOrientation();
-								local outRight = parentPosition+(vec3.new(0,5.5,3.6):mul_quat(rotation));
+								local parentPosition = topConnection.object:NKGetWorldPosition()
+								local rotation = topConnection.object:NKGetWorldOrientation()
+								local outRight = parentPosition+(vec3.new(0,5.5,3.6):mul_quat(rotation))
 								itemData:NKSetPosition(outRight)
 								itemData:NKPlaceInWorld(true, false)
 								itemData:NKSetShouldRender(true, true)
@@ -149,7 +148,7 @@ function ElevatorBase:Update(dt)
 		elseif(self.m_shieldTimer>=14 and self.m_shieldTimer < 15) then
 			self:setShieldPosition(vec3.new(0,1.75-(self.m_shieldTimer-14)*1.75,0))
 		else
-			self.m_shieldTimer = self.m_shieldTimer - 8;
+			self.m_shieldTimer = self.m_shieldTimer - 8
 			self:RaiseClientEvent("ClientEvent_SyncShield", { shieldTimer = self.m_shieldTimer })
 			self:setShieldPosition(vec3.new(0,0,0))
 		end

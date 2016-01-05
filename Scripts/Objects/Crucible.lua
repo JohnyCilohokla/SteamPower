@@ -97,13 +97,12 @@ function Crucible:Update(dt)
 		end
 	end
 	
-	local gameobjects = Eternus.GameObjectSystem:NKGetGameObjectsInRadius(self:NKGetWorldPosition(), 1.5, "all", false);
-	for objectID, objectData in pairs(gameobjects) do
-		local objectInstance = objectData:NKGetInstance()
-		if (objectInstance:InstanceOf(StoneFurnace)) then
+	local gameobjects = Eternus.GameObjectSystem:NKGetGameObjectsInRadius(self:NKGetWorldPosition(), 1.5, "all", false)
+	for objectID, gameobject in pairs(gameobjects) do
+		if (gameobject:InstanceOf(StoneFurnace)) then
 			self.m_heat = math.min(self.m_heat + 50*dt, 1600)
 			return
-		--elseif (objectInstance:InstanceOf(LargeFurnace)) then
+		--elseif (gameobject:InstanceOf(LargeFurnace)) then
 		--	self.m_heat = math.min(self.m_heat + 10*dt, 2000)
 		--	return
 		end
@@ -210,7 +209,7 @@ end
 
 -------------------------------------------------------------------------------
 function Crucible:ConvertTo(name)
-	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(name, true, true);
+	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(name, true, true)
 	
 	newObj:NKSetOrientation(self:NKGetWorldOrientation())
 	newObj:NKSetPosition(self:NKGetWorldPosition(), false)
@@ -220,12 +219,9 @@ function Crucible:ConvertTo(name)
 	
 	newObj:NKPlaceInWorld(true, false)
 	
-	local newObjInstance = newObj:NKGetInstance()
-	newObjInstance:Restore(data)
-	if (newObjInstance ~= nil) then
-		if (newObjInstance.OnPlace ~= nil) then
-			newObjInstance:OnPlace()
-		end
+	newObj:Restore(data)
+	if (newObj.OnPlace ~= nil) then
+		newObj:OnPlace()
 	end
 end
 

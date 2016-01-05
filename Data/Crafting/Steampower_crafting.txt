@@ -1,15 +1,17 @@
 All Recipes
 {
 
-//FRAMES
+	#FRAMES
 
 	Sheet Table Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Sheet Table Frame"
 			craftTime = 10.0
 			priority = 3
 			
@@ -36,12 +38,14 @@ All Recipes
 	}
 	
 	Pottery Wheel Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Pottery Wheel Frame"
 			craftTime = 5.0
 			
 			Components
@@ -86,12 +90,14 @@ All Recipes
 		}
 	}
 	Large Furnace Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Large Furnace Frame"
 			craftTime = 6.0
 			
 			Components
@@ -116,12 +122,14 @@ All Recipes
 	}
 	
 	Improved Workbench Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Improved Workbench Frame"
 			craftTime = 5.0
 			priority = 2.0
 			
@@ -160,12 +168,14 @@ All Recipes
 	}
 	
 	Conveyor Belt Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Conveyor Belt Frame"
 			craftTime = 8.0
 			
 			Components
@@ -199,12 +209,14 @@ All Recipes
 	}
 	
 	Conveyor Ramp Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Conveyor Ramp Frame"
 			craftTime = 8.0
 			
 			Components
@@ -242,12 +254,14 @@ All Recipes
 	}
 	
 	T Sorter Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "T Sorter Frame"
 			craftTime = 8.0
 			
 			Components
@@ -285,12 +299,14 @@ All Recipes
 	}
 	
 	Elevator Frame Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Elevator Frame"
 			craftTime = 8.0
 			
 			Components
@@ -327,15 +343,17 @@ All Recipes
 		}
 	}
 	
-//CRAFTING STATIONS
+	#CRAFTING STATIONS
 
 	Anvil Stand Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Anvil Stand"
 			craftTime = 5.0
 			
 			Components
@@ -377,13 +395,15 @@ All Recipes
 		}
 	}
 
-    Casting L Box Wooden Recipe
-	{	
+	Casting L Box Wooden Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting L Box Wooden"
 			craftTime = 10.0
 			priority = 3
 			
@@ -428,13 +448,15 @@ All Recipes
 		}
 	}
 	
-	    Casting M Box Wooden Recipe
-	{	
+	Casting M Box Wooden Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting M Box Wooden"
 			craftTime = 10.0
 			priority = 2
 			
@@ -479,13 +501,15 @@ All Recipes
 		}
 	}
 	
-	    Casting S Box Wooden Recipe
-	{	
+	Casting S Box Wooden Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting S Box Wooden"
 			craftTime = 10.0
 			priority = 1
 			
@@ -531,12 +555,14 @@ All Recipes
 	}
 	
 	Sheet Table Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Sheet Table"
 			craftTime = 10.0
 			
 			Components
@@ -562,12 +588,14 @@ All Recipes
 	}
 
 	Bronze Bellows Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Bellows"
 			craftTime = 5.0
 			
 			Components
@@ -614,19 +642,21 @@ All Recipes
 	}
 	
 	Wooden Bowl Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Wooden Bowl"
 			craftTime = 5.0
 			
 			Components
 			{
 				Part1
 				{
-				    "Chopped Wood" = 2
+					"Chopped Wood" = 2
 					"Stacked Wood" = 6
 					"Wood Plank" = 6
 				}
@@ -656,20 +686,22 @@ All Recipes
 		}
 	}
 	
-		Pottery Wheel Recipe
-	{	
+	Pottery Wheel Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Pottery Wheel"
 			craftTime = 5.0
 			
 			Components
 			{
 				Part1
 				{
-				    "Pottery Wheel Frame" = 1
+					"Pottery Wheel Frame" = 1
 				}
 				
 				Part2
@@ -708,12 +740,14 @@ All Recipes
 	}
 	
 	Improved Workbench Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Improved Workbench"
 			craftTime = 10.0
 			
 			Components
@@ -721,7 +755,7 @@ All Recipes
 
 				Part1
 				{
-				 "Improved Workbench Frame" = 1
+					"Improved Workbench Frame" = 1
 				}
 				
 				Part2
@@ -745,12 +779,14 @@ All Recipes
 	}
 	
 	Large Furnace Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Large Furnace"
 			craftTime = 10.0
 			
 			Components
@@ -783,15 +819,17 @@ All Recipes
 		}
 	}
 
-//POTTERY WHEEL CRAFTING	
+	#POTTERY WHEEL CRAFTING
 	
 	Clay Jar New Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Clay Jar New"
 			craftTime = 3.0
 			
 			Components
@@ -822,13 +860,16 @@ All Recipes
 			}
 		}
 	}
-    Casting Cylinder New Recipe
-	{	
+	
+	Casting Cylinder New Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting Cylinder New"
 			craftTime = 3.0
 			
 			Components
@@ -860,13 +901,15 @@ All Recipes
 		}
 	}
 	
-    Crucible New Recipe
-	{	
+	Crucible New Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Crucible New"
 			craftTime = 3.0
 			
 			Components
@@ -898,12 +941,14 @@ All Recipes
 	}
 	
 	Pottery Start Crucible New Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Pottery Start Crucible New"
 			craftTime = 3.0
 			
 			Components
@@ -930,15 +975,17 @@ All Recipes
 		}
 	}
 	
-//POTTERY FIRING
+	#POTTERY FIRING
 	
 	Crucible Empty Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Crucible Empty"
 			craftTime = 6.0
 			
 			Components
@@ -971,12 +1018,14 @@ All Recipes
 	}
 	
 	Clay Jar Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Clay Jar"
 			craftTime = 6.0
 			
 			Components
@@ -1009,12 +1058,14 @@ All Recipes
 	}
 	
 	Casting Cylinder Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Casting Cylinder"
 			craftTime = 6.0
 			
 			Components
@@ -1046,15 +1097,17 @@ All Recipes
 		}
 	}
 
-//TOOLS	
+	#TOOLS
 
 	Wooden Mallet Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Wooden Mallet"
 			craftTime = 5.0
 			
 			Components
@@ -1100,12 +1153,14 @@ All Recipes
 	}
 	
 	Iron Wrench Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Wrench"
 			craftTime = 8.0
 			
 			Components
@@ -1144,12 +1199,14 @@ All Recipes
 	}
 	
 	Bronze Shears Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Shears"
 			craftTime = 5.0
 			
 			Components
@@ -1192,12 +1249,14 @@ All Recipes
 	}
 	
 	Crucible Fork Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Crucible Fork"
 			craftTime = 5.0
 			
 			Components
@@ -1248,15 +1307,17 @@ All Recipes
 		}
 	}
 	
-//COMPONENTS	
+	#COMPONENTS
 
 	Bronze Cog Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Cog"
 			craftTime = 5.0
 			
 			Components
@@ -1300,12 +1361,14 @@ All Recipes
 	}
 	
 	Iron Strips Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Strips"
 			craftTime = 5.0
 			
 			Components
@@ -1349,12 +1412,14 @@ All Recipes
 	}
 	
 	Girder Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Girder"
 			craftTime = 5.0
 			
 			Components
@@ -1393,12 +1458,14 @@ All Recipes
 	}
 	
 	Nails and Screws Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Nails and Screws"
 			craftTime = 5.0
 			
 			Components
@@ -1442,12 +1509,14 @@ All Recipes
 	}
 	
 	Bronze Tube Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Tube"
 			craftTime = 5.0
 			
 			Components
@@ -1490,12 +1559,14 @@ All Recipes
 		}
 	}
 	Iron Tube Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Tube"
 			craftTime = 5.0
 			
 			Components
@@ -1538,13 +1609,15 @@ All Recipes
 		}
 	}
 	
-    Bronze Rod Recipe
-	{	
+	Bronze Rod Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Rod"
 			craftTime = 5.0
 			
 			Components
@@ -1582,12 +1655,14 @@ All Recipes
 		}
 	}
 	Iron Rod Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Rod"
 			craftTime = 5.0
 			
 			Components
@@ -1625,15 +1700,17 @@ All Recipes
 		}
 	}
 	
-//PLASTER CASTS	
+	#PLASTER CASTS
 	
 	Plaster Cast Axe Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Axe"
 			craftTime = 10.0
 			
 			Components
@@ -1646,9 +1723,9 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
-				    "Jagged Rock" = 1
+					"Jagged Rock" = 1
 					"Crude Axe" = 1
 					"Bronze Axe Head" = 1
 					"Bronze Axe" = 1
@@ -1671,13 +1748,15 @@ All Recipes
 		}
 	}
 	
-    Plaster Cast Hammer Recipe
-	{	
+	Plaster Cast Hammer Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Hammer"
 			craftTime = 10.0
 			
 			Components
@@ -1690,9 +1769,9 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
-				    "Round Rock" = 1
+					"Round Rock" = 1
 					"Crude Hammer" = 1
 					"Bronze Hammer Head" = 1
 					"Bronze Hammer" = 1
@@ -1716,12 +1795,14 @@ All Recipes
 	}
 	
 	Plaster Cast Pick Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Pick"
 			craftTime = 10.0
 			
 			Components
@@ -1734,7 +1815,7 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
 					"Crude Pick" = 1
 					"Bronze Pick Head" = 1
@@ -1759,12 +1840,14 @@ All Recipes
 	}
 	
 	Plaster Cast Knife Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Knife"
 			craftTime = 10.0
 			
 			Components
@@ -1777,9 +1860,9 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
-				    "Small Rock Spire" = 1
+					"Small Rock Spire" = 1
 					"Flint Head" = 1
 					"Crude Knife" = 1
 					"Bronze Knife Blade" = 1
@@ -1803,13 +1886,15 @@ All Recipes
 		}
 	}
 	
-		Plaster Cast Spear Recipe
-	{	
+	Plaster Cast Spear Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Spear"
 			craftTime = 10.0
 			
 			Components
@@ -1822,7 +1907,7 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
 					"Wood Spear" = 1
 					"Bronze Spear Head" = 1
@@ -1847,12 +1932,14 @@ All Recipes
 	}
 	
 	Plaster Cast Shovel Recipe
-	{	
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Shovel"
 			craftTime = 10.0
 			
 			Components
@@ -1865,7 +1952,7 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
 					"Crude Shovel" = 1
 					"Bronze Shovel Head" = 1
@@ -1888,13 +1975,15 @@ All Recipes
 			}
 		}
 	}
-		Plaster Cast Hoe Recipe
-	{	
+	Plaster Cast Hoe Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Hoe"
 			craftTime = 10.0
 			
 			Components
@@ -1907,7 +1996,7 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
 					"Crude Hoe" = 1
 					"Bronze Hoe Head" = 1
@@ -1931,13 +2020,15 @@ All Recipes
 		}
 	}
 	
-			Plaster Cast Sword Recipe
-	{	
+	Plaster Cast Sword Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Sword"
 			craftTime = 10.0
 			
 			Components
@@ -1950,7 +2041,7 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
 					"Crude Sword" = 1
 					"Bronze Sword Blade" = 1
@@ -1974,13 +2065,15 @@ All Recipes
 		}
 	}
 	
-				Plaster Cast Anvil Recipe
-	{	
+	Plaster Cast Anvil Recipe
+	{
 		Script = "Scripts/Recipes/DefaultRecipe.lua"
 		
 
 		LuaData
 		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Anvil"
 			craftTime = 10.0
 			
 			Components
@@ -1993,9 +2086,9 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2 
+				Part2
 				{
-				    "Stone Anvil" = 1
+					"Stone Anvil" = 1
 					"Bronze Anvil" = 1
 					"Iron Anvil" = 1
 				}

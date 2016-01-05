@@ -47,16 +47,16 @@ end
 
 -------------------------------------------------------------------------------
 function TSorter:Update(dt)
-	local parentPosition = self:NKGetWorldPosition();
-	local rotation = self:NKGetWorldOrientation();
+	local parentPosition = self:NKGetWorldPosition()
+	local rotation = self:NKGetWorldOrientation()
 	
-	local outRight = parentPosition+(vec3.new(-3.6,3.5,0):mul_quat(rotation));
-	local outLeft = parentPosition+(vec3.new(3.6,3.5,0):mul_quat(rotation));
+	local outRight = parentPosition+(vec3.new(-3.6,3.5,0):mul_quat(rotation))
+	local outLeft = parentPosition+(vec3.new(3.6,3.5,0):mul_quat(rotation))
 	
-	local localPosition = vec3.new(0,2.19,-1.3);
-	local localRotation = quat.new(1, vec3.new((-16.5/360),0,0));
+	local localPosition = vec3.new(0,2.19,-1.3)
+	local localRotation = quat.new(1, vec3.new((-16.5/360),0,0))
 	
-	local sides = {distX = 1.1,distY = 0.785,distZ = 0.75};
+	local sides = {distX = 1.1,distY = 0.785,distZ = 0.75}
 	local input = getQBB(parentPosition, localPosition, rotation, localRotation, sides)
 	
 
@@ -64,13 +64,13 @@ function TSorter:Update(dt)
 		for itemID,itemData in pairs(inputData) do
 			
 			--CL.println(inputID,itemData:NKGetName(), #inputData)
-			--itemData:NKRemoveFromWorld();
+			--itemData:NKRemoveFromWorld()
 			
 			
-			local active = false;
-			local filters = self:NKGetChildren();
+			local active = false
+			local filters = self:NKGetChildren()
 			for filterID, filterData in pairs(self.m_filters) do 
-				if filterID == itemData:NKGetName() then
+				if (itemData.GetName and filterID == itemData:GetName()) or filterID == itemData:NKGetName() then
 					active = true
 				end
 			end
@@ -101,7 +101,7 @@ function TSorter:Interact(args)
 			--interactor:Place()
 			--self:ConsumeFuel(60, true)
 			
-			local active = nil;
+			local active = nil
 			for filterID, filterData in pairs(self.m_filters) do 
 				if filterID == equippedItem:NKGetName() then
 					active = filterID
@@ -110,16 +110,16 @@ function TSorter:Interact(args)
 			
 			if (active==nil) then
 				self.m_filters[equippedItem:NKGetName()] = true
-				Eternus.GameState:PushToChatQueue("Added new filer: "..equippedItem:NKGetName())
+				player:SendChatMessage("Added new filer: "..equippedItem:NKGetName())
 			else
-				Eternus.GameState:PushToChatQueue("Removed filer: "..active)
+				player:SendChatMessage("Removed filer: "..active)
 				self.m_filters[active] = nil
 			end
 			
 			return true
 		else
 			self.m_filters = {}
-			Eternus.GameState:PushToChatQueue("Removed all filers")
+			player:SendChatMessage("Removed all filers")
 		end
 	else
 		NKError("No Local Player?")

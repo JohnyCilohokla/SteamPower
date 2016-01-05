@@ -62,7 +62,7 @@ function ClayJug:Update(dt)
 	end
 	
 	-- TODO add different liquids
-	local topConnection = self:getConnection("Top");
+	local topConnection = self:getConnection("Top")
 	if (topConnection~=nil and topConnection.object:InstanceOf(LiquidProvider)) then
 		if (self.m_liquidAmountMax-self.m_liquidAmount) > 0 then
 			local liquid, amout = topConnection.object:GetLiquid(dt, self.m_liquidAmountMax-self.m_liquidAmount, self.m_liquid)
@@ -97,7 +97,7 @@ end
 
 -------------------------------------------------------------------------------
 function ClayJug:ConvertTo(name)
-	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(name, true, true);
+	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(name, true, true)
 	
 	newObj:NKSetOrientation(self:NKGetWorldOrientation())
 	newObj:NKSetPosition(self:NKGetWorldPosition(), false)
@@ -107,12 +107,9 @@ function ClayJug:ConvertTo(name)
 	
 	newObj:NKPlaceInWorld(true, false)
 	
-	local newObjInstance = newObj:NKGetInstance()
-	newObjInstance:Restore(data)
-	if (newObjInstance ~= nil) then
-		if (newObjInstance.OnPlace ~= nil) then
-			newObjInstance:OnPlace()
-		end
+	newObj:Restore(data)
+	if (newObj.OnPlace ~= nil) then
+		newObj:OnPlace()
 	end
 end
 

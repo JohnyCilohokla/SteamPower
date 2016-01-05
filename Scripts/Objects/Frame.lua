@@ -27,10 +27,10 @@ Frame.ElevatorConnectors["SideR"] = { pos = vec3.new(-2.1,1.985,0), rotation = q
 
 -------------------------------------------------------------------------------
 function Frame:Constructor(args)
-	self.m_frameLayout = CL.FrameLayouts.parse(args.attachmentPointsRef);
-	self.m_targetObject = args.targetObject;
-	self.m_targets = {};
-	self.m_targetID = 1;
+	self.m_frameLayout = CL.FrameLayouts.parse(args.attachmentPointsRef)
+	self.m_targetObject = args.targetObject
+	self.m_targets = {}
+	self.m_targetID = 1
 	if args.targets then
 		for key,data in pairs(args.targets) do
 			table.insert(self.m_targets, data)
@@ -121,7 +121,7 @@ end
 -------------------------------------------------------------------------------
 function Frame:NetEvent_DetachAll()
 	CL.out("Frame:NetEvent_DetachAll()")
-	local attachments = self:NKGetChildren();
+	local attachments = self:NKGetChildren()
 	if Eternus.IsServer then
 		for attachmentID, attachmentData in pairs(attachments) do 
 			local newObject = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(attachmentData:NKGetName(), true, true)
@@ -153,11 +153,11 @@ function Frame:ListIngredients()
 	local attachmentsReq = {}
 	local attachmentsAvailable = {}
 	
-	local selfPos = self:NKGetWorldPosition();
-	local selfInvRot = self:NKGetWorldOrientation():NKGetInverse();
+	local selfPos = self:NKGetWorldPosition()
+	local selfInvRot = self:NKGetWorldOrientation():NKGetInverse()
 	
-	local attachmentsPositions = {};
-	local attachments = self:NKGetChildren();
+	local attachmentsPositions = {}
+	local attachments = self:NKGetChildren()
 	for attachmentID, attachmentData in pairs(attachments) do 
 		attachmentsPositions[(attachmentData:NKGetWorldPosition()-selfPos):mul_quat(selfInvRot)] = attachmentData:NKGetName()
 	end
@@ -165,7 +165,7 @@ function Frame:ListIngredients()
 	for _, connectorData in pairs(self.m_frameLayout) do 
 		for locationID, locationData in pairs(connectorData.locations) do 
 			attachmentsReq[connectorData.ingredients[1]] = (attachmentsReq[connectorData.ingredients[1]] or 0) + 1
-			local attachments = self:NKGetChildren();
+			local attachments = self:NKGetChildren()
 			for attachmentPosition, attachmentName in pairs(attachmentsPositions) do
 				if (CL.compareVec3(locationData.position,attachmentPosition) and connectorData.ingredients[1] == attachmentName) then
 					--match
@@ -174,7 +174,7 @@ function Frame:ListIngredients()
 			end
 		end
 	end
-	return attachmentsReq, attachmentsAvailable;
+	return attachmentsReq, attachmentsAvailable
 end
  
  
@@ -222,11 +222,11 @@ function Frame:Interact(args)
 				end
 				return true
 			else
-				local selfPos = self:NKGetWorldPosition();
-				local selfInvRot = self:NKGetWorldOrientation():NKGetInverse();
+				local selfPos = self:NKGetWorldPosition()
+				local selfInvRot = self:NKGetWorldOrientation():NKGetInverse()
 				
-				local attachmentsPositions = {};
-				local attachments = self:NKGetChildren();
+				local attachmentsPositions = {}
+				local attachments = self:NKGetChildren()
 				for attachmentID, attachmentData in pairs(attachments) do 
 					attachmentsPositions[(attachmentData:NKGetWorldPosition()-selfPos):mul_quat(selfInvRot)] = attachmentData:NKGetName()
 				end
@@ -234,10 +234,10 @@ function Frame:Interact(args)
 				for _, connectorData in pairs(self.m_frameLayout) do 
 					if (connectorData.ingredients[1] == equippedItem:NKGetName()) then
 						for locationID, locationData in pairs(connectorData.locations) do 
-							local matchAll = false;
+							local matchAll = false
 							for attachmentPosition, attachmentName in pairs(attachmentsPositions) do
 								if (CL.compareVec3(locationData.position,attachmentPosition)) then
-									matchAll = true;
+									matchAll = true
 								end
 							end
 							if (not matchAll) then
@@ -255,19 +255,19 @@ function Frame:Interact(args)
 			local _matchAll = true
 			for attachmentsReq, amount in pairs(attachmentsReq) do 
 				if ((attachmentsAvailable[attachmentsReq] or 0) < amount) then
-					_matchAll = false;
+					_matchAll = false
 				end
 			end
 			if (_matchAll) then
-				CL.println("Done!");
-				local selfPos = self:NKGetWorldPosition();
-				local selfInvRot = self:NKGetWorldOrientation():NKGetInverse();
+				CL.println("Done!")
+				local selfPos = self:NKGetWorldPosition()
+				local selfInvRot = self:NKGetWorldOrientation():NKGetInverse()
 				
-				local attachmentsPositions = {};
+				local attachmentsPositions = {}
 		
 				for _, connectorData in pairs(self.m_frameLayout) do 
 					for locationID, locationData in pairs(connectorData.locations) do 
-						local attachments = self:NKGetChildren();
+						local attachments = self:NKGetChildren()
 						for attachmentID, attachmentData in pairs(attachments) do 
 							if (CL.compareVec3(locationData.position,(attachmentData:NKGetWorldPosition()-selfPos):mul_quat(selfInvRot))) then
 								attachmentData:NKDeleteMe()
@@ -278,18 +278,15 @@ function Frame:Interact(args)
 				
 				-- drop all other attachments
 				
-				local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(self.m_targetObject, true, true);
+				local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(self.m_targetObject, true, true)
 				
 				newObj:NKSetOrientation(self:NKGetWorldOrientation())
 				newObj:NKSetPosition(self:NKGetWorldPosition(), false)
 				--newObj:NKGetPhysics()
 				newObj:NKPlaceInWorld(true, false)
 				
-				local newObjInstance = newObj:NKGetInstance()
-				if (newObjInstance ~= nil) then
-					if (newObjInstance.OnPlace ~= nil) then
-						newObjInstance:OnPlace()
-					end
+				if (newObj.OnPlace ~= nil) then
+					newObj:OnPlace()
 				end
 				
 				self:NKRemoveFromWorld(true, true, true)
@@ -305,7 +302,7 @@ end
 function Frame:NetSerializeConstruction( stream )
 	Frame.__super.NetSerializeConstruction(self, stream)
 	
-	local attachments = self:NKGetChildren();
+	local attachments = self:NKGetChildren()
 	
 	local i = 0
 	for attachmentID, attachmentData in pairs(attachments) do 

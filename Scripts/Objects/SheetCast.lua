@@ -28,7 +28,7 @@ end
 --[[function SheetCast:GetDebuggingText()
 	local out = "Filters: "
 	
-	local filters = self:NKGetChildren();
+	local filters = self:NKGetChildren()
 	for filterID, filterData in pairs(filters) do 
 		out = out .. filterData:NKGetName() .. " "
 	end
@@ -89,19 +89,16 @@ function SheetCast:Interact(args)
 end
 
 function SheetCast:SpawnTransitionObject(transitionName, targetPosition, targetName, timeLeft)
-	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(transitionName, true, true);
+	local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(transitionName, true, true)
 	
 	newObj:NKSetOrientation(self:NKGetWorldOrientation())
-	newObj:NKSetPosition(self:NKGetWorldPosition()+targetPosition, false)
+	newObj:NKSetPosition(self:NKGetWorldPosition()+targetPosition:mul_quat(self:NKGetWorldOrientation()), false)
 	local newObjPhysics = newObj:NKGetPhysics()
 	newObj:NKPlaceInWorld(true, false)
 	
-	local newObjInstance = newObj:NKGetInstance()
-	newObjInstance:SetTarget( targetName, timeLeft )
-	if (newObjInstance ~= nil) then
-		if (newObjInstance.OnPlace ~= nil) then
-			newObjInstance:OnPlace()
-		end
+	newObj:SetTarget( targetName, timeLeft )
+	if (newObj.OnPlace ~= nil) then
+		newObj:OnPlace()
 	end
 	self.m_cooldown = timeLeft
 end

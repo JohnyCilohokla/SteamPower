@@ -14,7 +14,6 @@ end
 	ConveyorBelt.CLConnectors["SideR"] = { pos = vec3.new(-1.753,1.881,0), rotation = quat.new(0.707107,0,0.707107,0), opposite = quat.new(0.707107,0,-0.707107,0), types = {"itemDropIn"}}
 -------------------------------------------------------------------------------
 function ConveyorBelt:Constructor(args)
-	self.m_iconGroup = "SPIcons"
 	self.m_sleepTimer = 0.0
 	self.m_flashTimer = 0.0
 	self.m_flashing = false
@@ -40,19 +39,19 @@ end
 
 -------------------------------------------------------------------------------
 function ConveyorBelt:Update(dt)
-	local bb = { minX = - 1.3, minY = 1.6, minZ = - 3.5, maxX = 1.3, maxY = 2.8, maxZ = 3.5 };
+	local bb = { minX = - 1.3, minY = 1.6, minZ = - 3.5, maxX = 1.3, maxY = 2.8, maxZ = 4.2 }
 	local gameobjects = getBB(self:NKGetWorldPosition(), self:NKGetWorldOrientation(), bb)
 	
 	
-	for objectID,objectData in pairs(gameobjects) do
-		local objectInstance = objectData:NKGetInstance()
-		if (objectInstance:InstanceOf(PlaceableObject)) then
-			--CL.println(EternusEngine.Debugging.Inspect(objectData))
-			if (objectInstance:NKGetBounds():NKGetRadius()<3 and objectInstance:NKGetPhysics()~=nil and objectInstance:NKIsPhysicsDynamic()==false) then
-				objectInstance:NKGetPhysics():NKSetMotionType(PhysicsComponent.DYNAMIC)
-				self:Bounce(self, objectInstance, vec3.new(0,0,1), 6);
+	for objectID,gameobject in pairs(gameobjects) do
+		if (gameobject:InstanceOf(LootObject)) then
+			self:Bounce(self, gameobject, vec3.new(0,0,1), 6)
+		elseif (gameobject:InstanceOf(PlaceableObject)) then
+			if (gameobject:NKGetBounds():NKGetRadius()<3 and gameobject:NKGetPhysics()~=nil and gameobject:NKIsPhysicsDynamic()==false) then
+				gameobject:NKGetPhysics():NKSetMotionType(PhysicsComponent.DYNAMIC)
+				self:Bounce(self, gameobject, vec3.new(0,0,1), 6)
 			end
-		--elseif (objectData:NKGetInstance():InstanceOf(BasePlayer)) then
+		--elseif (gameobject:InstanceOf(BasePlayer)) then
 		-- TODO player interaction
 		end
 	end
@@ -68,15 +67,15 @@ function ConveyorBelt:Bounce(self, value, dir, extend)
 		if (physics~=nil) then 
 			local forward = dir:mul_quat(self:NKGetWorldOrientation())
 			
-			local dir = vec3.new(forward:x()*extend,forward:y()*extend,forward:z()*extend);
-			dir = vec3.new(dir:x()+parentPosition:x(),dir:y()+parentPosition:y(),dir:z()+parentPosition:z());
-			dir = vec3.new(dir:x()-objectPosition:x(),dir:y()-objectPosition:y(),dir:z()-objectPosition:z());
+			local dir = vec3.new(forward:x()*extend,forward:y()*extend,forward:z()*extend)
+			dir = vec3.new(dir:x()+parentPosition:x(),dir:y()+parentPosition:y(),dir:z()+parentPosition:z())
+			dir = vec3.new(dir:x()-objectPosition:x(),dir:y()-objectPosition:y(),dir:z()-objectPosition:z())
 			
 			local last = physics:NKGetLinearVelocity()
-			local up = forward:y();
-			dir = vec3.new(dir:x()+last:x(),0,dir:z()+last:z());
-			dir = dir:normalize();
-			dir = vec3.new(dir:x()*3,up*3,dir:z()*3);
+			local up = forward:y()
+			dir = vec3.new(dir:x()+last:x(),0,dir:z()+last:z())
+			dir = dir:normalize()
+			dir = vec3.new(dir:x()*3,up*3,dir:z()*3)
 			
 			physics:NKSetLinearVelocity(dir)
 		end
@@ -88,10 +87,7 @@ function ConveyorBelt:OnContactStart( collision )
 	collision.raiseStopEvents = true
 	collision.raiseStayEvents = true
 	
-	local instance = collision.gameobject:NKGetInstance()
-	if instance then
-		self:OnContact(instance)
-	end
+	self:OnContact(collision.gameobject)
 end
 
 function ConveyorBelt:OnContactStay( collision )
@@ -99,26 +95,20 @@ function ConveyorBelt:OnContactStay( collision )
 	collision.raiseStayEvents = true
 	collision.raiseStopEvents = true
 	
-	local instance = collision.gameobject:NKGetInstance()
-	if instance then
-		self:OnContact(instance)
-	end
+	self:OnContact(collision.gameobject)
 end
 
 function ConveyorBelt:OnContactStop( collision )
 	if not collision.gameobject then return end
 	
-	local instance = collision.gameobject:NKGetInstance()
-	if instance then
-		self:OnContact(instance)
-	end
+	self:OnContact(collision.gameobject)
 end
 
 function ConveyorBelt:OnContact(instance)
-	if (instance:InstanceOf(PlaceableObject)) then
-		--local relativePosition = (data.contact.position-self:NKGetWorldPosition()):mul_quat(self:NKGetWorldOrientation():NKGetInverse());
+	if (instance:InstanceOf(EternusEngine.GameObjectClass)) then
+		--local relativePosition = (data.contact.position-self:NKGetWorldPosition()):mul_quat(self:NKGetWorldOrientation():NKGetInverse())
 		
-		--local bb = { minX = - 1.3, minY = 1.7, minZ = - 3.5, maxX = 1.3, maxY = 1.95, maxZ = 3.5 };
+		--local bb = { minX = - 1.3, minY = 1.7, minZ = - 3.5, maxX = 1.3, maxY = 1.95, maxZ = 3.5 }
 			
 		--local isWithin = isWithinBB(relativePosition, bb)
 		--CL.println(data.otherBody.gameobject:NKGetBounds():NKGetRadius())

@@ -12,13 +12,12 @@ end
 -------------------------------------------------------------------------------
 function SignalTool:SecondaryAction(args)
 	if args.targetObj then
-		local targetInstace = args.targetObj:NKGetInstance()
-		if targetInstace and targetInstace:InstanceOf(SignalInterface) then
+		if args.targetObj and args.targetObj:InstanceOf(SignalInterface) then
 			if self.m_source then
-				self.m_source:AddSignalListener(targetInstace)
+				self.m_source:AddSignalListener(args.targetObj)
 				self.m_source = nil
 			else
-				self.m_source = targetInstace
+				self.m_source = args.targetObj
 			end
 		end
 		return true

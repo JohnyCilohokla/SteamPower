@@ -76,22 +76,18 @@ function PlasterCast:Interact(args)
 				end
 				return true
 			elseif (equippedItem:NKGetName() == "Bronze Hammer") then
-				local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(self.m_craftedItem, true, true);
+				local newObj = Eternus.GameObjectSystem:NKCreateNetworkedGameObject(self.m_craftedItem, true, true)
 				
 				newObj:NKSetOrientation(self:NKGetWorldOrientation())
 				newObj:NKSetPosition(self:NKGetWorldPosition(), false)
 				local newObjPhysics = newObj:NKGetPhysics()
 				if (newObjPhysics ~= nil) then
-					newObjPhysics:NKSetMotionType(PhysicsComponent.DYNAMIC)
-					newObjPhysics:NKEnableSimulation()
+					newObjPhysics:NKActivate()
 				end
 				newObj:NKPlaceInWorld(true, false)
 				
-				local newObjInstance = newObj:NKGetInstance()
-				if (newObjInstance ~= nil) then
-					if (newObjInstance.OnPlace ~= nil) then
-						newObjInstance:OnPlace()
-					end
+				if (newObj.OnPlace ~= nil) then
+					newObj:OnPlace()
 				end
 				self:ProduceDrops(self:NKGetWorldPosition())
 				self:NKDeleteMe()

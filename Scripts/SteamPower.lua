@@ -20,7 +20,7 @@ function SteamPower:Initialize()
 	Eternus.GameState:RegisterSlashCommand("SteamPower", self, "Info")
 	
 	CL.println("TUG SteamPower:RegisterCrafting")
-	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_crafting.txt")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_crafting.txt", "SteamPower")
 end
 
 -------------------------------------------------------------------------------

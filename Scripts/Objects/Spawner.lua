@@ -23,7 +23,7 @@ end
 
 -------------------------------------------------------------------------------
 function Spawner:Spawn()
-	local filters = self:NKGetChildren();
+	local filters = self:NKGetChildren()
 	for filterID, filterData in pairs(filters) do 
 		filterData:NKSetShouldRender(false, false)
 	end
@@ -31,7 +31,7 @@ end
  
 -------------------------------------------------------------------------------
 function Spawner:Despawn()
-	local filters = self:NKGetChildren();
+	local filters = self:NKGetChildren()
 	for filterID, filterData in pairs(filters) do 
 		filterData:NKDeleteMe()
 	end
@@ -41,12 +41,12 @@ end
 function Spawner:Update(dt)
 	self.m_sleepTimer = self.m_sleepTimer-dt
 	if (self.m_sleepTimer<0.0) then
-		self.m_sleepTimer = 2;
-		local parentPosition = self:NKGetWorldPosition();
-		local rotation = self:NKGetWorldOrientation();
-		local outPositon = vec3.new(0, -2, 0);
+		self.m_sleepTimer = 2
+		local parentPosition = self:NKGetWorldPosition()
+		local rotation = self:NKGetWorldOrientation()
+		local outPositon = vec3.new(0, -2, 0)
 	
-		local filters = self:NKGetChildren();
+		local filters = self:NKGetChildren()
 		for filterID, filterData in pairs(filters) do 
 				local ouput = Eternus.GameObjectSystem:NKCreateGameObject(filterData:NKGetName(), true)
 				if ouput ~= nil then
@@ -72,8 +72,8 @@ function Spawner:Interact(interactor)
 			--interactor:Place()
 			--self:ConsumeFuel(60, true)
 			
-			local filters = self:NKGetChildren();
-			local active = nil;
+			local filters = self:NKGetChildren()
+			local active = nil
 			for filterID, filterData in pairs(filters) do 
 				if filterData:NKGetName() == equippedItem:NKGetName() then
 					active = filterData
@@ -81,9 +81,9 @@ function Spawner:Interact(interactor)
 			end
 			
 			if (active==nil) then
-				local ouput2 = Eternus.GameObjectSystem:NKCreateGameObject(equippedItem:NKGetName(), true);
+				local ouput2 = Eternus.GameObjectSystem:NKCreateGameObject(equippedItem:NKGetName(), true)
 				
-				self:NKAddChildObject(ouput2);
+				self:NKAddChildObject(ouput2)
 				ouput2:NKSetPosition(vec3.new(0,2.0,0), false)
 				ouput2:NKSetOrientation(quat.new(1,0,0,0))
 				ouput2:NKSetAbsoluteScale(0.01)
@@ -94,10 +94,10 @@ function Spawner:Interact(interactor)
 				ouput2:NKSetShouldRender(false, false)
 				
 				--self.object:NKSendDataToServer()
-				Eternus.GameState:PushToChatQueue("Added new spawner: "..equippedItem:NKGetName())
+				interactor:SendChatMessage("Added new spawner: "..equippedItem:NKGetName())
 			else
-				Eternus.GameState:PushToChatQueue("Removed spawner: "..active:NKGetName())
-				self:NKRemoveChildObject(active);
+				interactor:SendChatMessage("Removed spawner: "..active:NKGetName())
+				self:NKRemoveChildObject(active)
 				active:NKDeleteMe()
 			end
 			
@@ -106,7 +106,7 @@ function Spawner:Interact(interactor)
 			for filterID, filterData in pairs(filters) do 
 				filterData:NKDeleteMe()
 			end
-			Eternus.GameState:PushToChatQueue("Removed all spawners")
+			interactor:SendChatMessage("Removed all spawners")
 		end
 	else
 		NKError("No Local Player?")

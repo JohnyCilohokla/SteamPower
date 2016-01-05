@@ -6,11 +6,12 @@ GameObjects
 		{
 			Script
 			{
-				file = "Scripts/Objects/CLPlaceableObject.lua"
-				class = "CLPlaceableObject"
+				file = "Scripts/Objects/CraftingStation.lua"
+				class = "CraftingStation"
 				arguments
 				{
 					encumbrance = 1
+					category = "Pottery Wheel"
 				}
 			}
 			Transform
