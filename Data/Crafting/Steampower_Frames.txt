@@ -30,6 +30,26 @@ All Recipes
 				"Sheet Table Frame" = 1
 			}
 
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Vines"
+							count = 4
+						}
+						2
+						{
+							name = "Wood Shaft"
+							count = 5
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -83,6 +103,32 @@ All Recipes
 					craftTime = 5.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Wood Plank"
+							count = 10
+						}
+					}
+				}
+				2
+				{
+					Collected
+					{
+						1
+						{
+							name = "Stacked Wood"
+							count = 10
+						}
+					}
+				}
+			}
 		}
 	}
 	Large Furnace Frame Recipe
@@ -108,11 +154,30 @@ All Recipes
 				}
 
 			}
-
 			
 			Results
 			{
 				"Large Furnace Frame" = 1
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Wood Shaft"
+							count = 15
+						}
+						2
+						{
+							name = "Cobblestone"
+							count = 15
+						}
+					}
+				}
 			}
 		}
 	}
@@ -160,6 +225,32 @@ All Recipes
 					craftTime = 5.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Wood Plank"
+							count = 80
+						}
+					}
+				}
+				2
+				{
+					Collected
+					{
+						1
+						{
+							name = "Stacked Wood"
+							count = 80
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -200,6 +291,31 @@ All Recipes
 			Results
 			{
 				"Conveyor Belt Frame" = 1
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Girder"
+							count = 8
+						}
+						2
+						{
+							name = "Iron Strips"
+							count = 4
+						}
+						3
+						{
+							name = "Nails and Screws"
+							count = 2
+						}
+					}
+				}
 			}
 		}
 	}
@@ -246,6 +362,36 @@ All Recipes
 			{
 				"Conveyor Ramp Frame" = 1
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Girder"
+							count = 7
+						}
+						2
+						{
+							name = "Iron Strips"
+							count = 5
+						}
+						3
+						{
+							name = "Iron Rod"
+							count = 2
+						}
+						4
+						{
+							name = "Nails and Screws"
+							count = 2
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -291,6 +437,36 @@ All Recipes
 			{
 				"T Sorter Frame" = 1
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Girder"
+							count = 8
+						}
+						2
+						{
+							name = "Iron Sheet"
+							count = 2
+						}
+						3
+						{
+							name = "Iron Rod"
+							count = 4
+						}
+						4
+						{
+							name = "Nails and Screws"
+							count = 2
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -335,6 +511,36 @@ All Recipes
 			Results
 			{
 				"Elevator Frame" = 1
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Girder"
+							count = 8
+						}
+						2
+						{
+							name = "Iron Sheet"
+							count = 3
+						}
+						3
+						{
+							name = "Iron Strips"
+							count = 2
+						}
+						4
+						{
+							name = "Nails and Screws"
+							count = 2
+						}
+					}
+				}
 			}
 		}
 	}

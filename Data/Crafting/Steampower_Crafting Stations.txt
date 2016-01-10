@@ -47,6 +47,32 @@ All Recipes
 					craftTime = 9.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Wood Plank"
+							count = 50
+						}
+					}
+				}
+				2
+				{
+					Collected
+					{
+						1
+						{
+							name = "Stacked Wood"
+							count = 50
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -98,6 +124,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -153,6 +194,21 @@ All Recipes
 					craftTime = 10.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -206,6 +262,21 @@ All Recipes
 					craftTime = 10.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -237,7 +308,21 @@ All Recipes
 			{
 				"Sheet Table" = 1
 			}
-
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Sheet Table Frame"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -292,6 +377,26 @@ All Recipes
 					craftTime = 5.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Bronze Sheet"
+							count = 1
+						}
+						2
+						{
+							name = "Leather Strips"
+							count = 2
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -310,8 +415,6 @@ All Recipes
 				Part1
 				{
 					"Chopped Wood" = 2
-					"Stacked Wood" = 6
-					"Wood Plank" = 6
 				}
 			}
 			
@@ -337,6 +440,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 5.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Chopped Wood"
+							count = 2
+						}
+					}
 				}
 			}
 		}
@@ -392,6 +510,21 @@ All Recipes
 			{
 				"Pottery Wheel" = 1
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Pottery Wheel Frame"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -430,6 +563,21 @@ All Recipes
 			Results
 			{
 				"Improved Workbench" = 1
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Improved Workbench Frame"
+							count = 1
+						}
+					}
+				}
 			}
 		}
 	}
@@ -470,6 +618,21 @@ All Recipes
 			Results
 			{
 				"Large Furnace Lit" = 1
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Large Furnace Frame"
+							count = 1
+						}
+					}
+				}
 			}
 		}
 	}

@@ -22,10 +22,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Jagged Rock" = 1
-					"Crude Axe" = 1
-					"Bronze Axe Head" = 1
-					"Bronze Axe" = 1
+					"Axe Head" = 1
+					"Axe" = 1
 				}
 			}
 			
@@ -40,6 +38,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -67,10 +80,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Round Rock" = 1
-					"Crude Hammer" = 1
-					"Bronze Hammer Head" = 1
-					"Bronze Hammer" = 1
+					"Hammer Head" = 1
+					"Hammer" = 1
 				}
 			}
 			
@@ -85,6 +96,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -104,7 +130,7 @@ All Recipes
 			{
 				Part1
 				{
-					"Limestone Powder Clump" = 2
+					"Limestone Powder Clump" = 1
 				}
 			}
 			
@@ -112,9 +138,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Crude Pick" = 1
-					"Bronze Pick Head" = 1
-					"Bronze Pick" = 1
+					"Pick Head" = 1
+					"Pick" = 1
 				}
 			}
 			
@@ -129,6 +154,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -156,11 +196,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Small Rock Spire" = 1
-					"Flint Head" = 1
-					"Crude Knife" = 1
-					"Bronze Knife Blade" = 1
-					"Bronze Knife" = 1
+					"Knife Blade" = 1
+					"Knife" = 1
 				}
 			}
 			
@@ -175,6 +212,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -202,9 +254,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Wood Spear" = 1
-					"Bronze Spear Head" = 1
-					"Bronze Spear" = 1
+					"Spear Head" = 1
+					"Spear" = 1
 				}
 			}
 			
@@ -219,6 +270,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -246,9 +312,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Crude Shovel" = 1
-					"Bronze Shovel Head" = 1
-					"Bronze Shovel" = 1
+					"Shovel Head" = 1
+					"Shovel" = 1
 				}
 			}
 			
@@ -263,6 +328,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -289,9 +369,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Crude Hoe" = 1
-					"Bronze Hoe Head" = 1
-					"Bronze Hoe" = 1
+					"Hoe Head" = 1
+					"Hoe" = 1
 				}
 			}
 			
@@ -306,6 +385,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -333,9 +427,8 @@ All Recipes
 			{
 				Part2
 				{
-					"Crude Sword" = 1
-					"Bronze Sword Blade" = 1
-					"Bronze Sword" = 1
+					"Sword Blade" = 1
+					"Sword" = 1
 				}
 			}
 			
@@ -350,6 +443,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 3
+						}
+					}
 				}
 			}
 		}
@@ -394,6 +502,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 1.0, 0.0>
 					craftTime = 10.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Limestone Powder Clump"
+							count = 4
+						}
+					}
 				}
 			}
 		}

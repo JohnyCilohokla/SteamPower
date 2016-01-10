@@ -48,6 +48,21 @@ All Recipes
 					craftTime = 8.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Bronze Sheet"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -99,6 +114,21 @@ All Recipes
 					craftTime = 8.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Sheet"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -143,6 +173,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 3.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Strips"
+							count = 2
+						}
+					}
 				}
 			}
 		}
@@ -196,6 +241,21 @@ All Recipes
 					craftTime = 8.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Strips"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -245,6 +305,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 8.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Bronze Sheet"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -297,6 +372,21 @@ All Recipes
 					craftTime = 8.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Sheet"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -343,6 +433,21 @@ All Recipes
 					craftTime = 6.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Bronze Tube"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	Iron Rod Recipe
@@ -386,6 +491,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 6.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Tube"
+							count = 1
+						}
+					}
 				}
 			}
 		}

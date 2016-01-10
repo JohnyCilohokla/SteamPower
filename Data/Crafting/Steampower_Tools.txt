@@ -50,6 +50,26 @@ All Recipes
 					craftTime = 5.0
 				}
 			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Forked Stick"
+							count = 1
+						}
+						2
+						{
+							name = "Wood Branch"
+							count = 1
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -94,6 +114,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 8.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Nails and Screws"
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -144,6 +179,21 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 5.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Bronze Knife Blade"
+							count = 2
+						}
+					}
 				}
 			}
 		}
@@ -203,6 +253,26 @@ All Recipes
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 					craftTime = 8.0
+				}
+			}
+			
+			Requirements
+			{
+				1
+				{
+					Collected
+					{
+						1
+						{
+							name = "Iron Rod"
+							count = 2
+						}
+						2
+						{
+							name = "Iron Strips"
+							count = 1
+						}
+					}
 				}
 			}
 		}
