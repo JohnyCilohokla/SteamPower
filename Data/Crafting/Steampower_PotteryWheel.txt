@@ -1,0 +1,152 @@
+All Recipes
+{
+	Pottery Start Crucible New Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Crucible New"
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Clump" = 2
+				}
+			}
+			
+			Results
+			{
+				"Crucible New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Clay Jar New Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Clay Jar New"
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Crucible New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+
+			}
+			
+			Results
+			{
+				"Clay Jar New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 3.5, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Casting Cylinder New Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting Cylinder New"
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Jar New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+
+			}
+			
+			Results
+			{
+				"Casting Cylinder New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Crucible New Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Crucible New"
+			craftTime = 3.0
+			
+			Components
+			{
+				Part1
+				{
+					"Casting Cylinder New" = 1
+				}
+				Part2
+				{
+					"Clay Clump" = 1
+				}
+			}
+			
+			Results
+			{
+				"Crucible New" = 1
+			}
+
+			Crafting Stations
+			{
+				Pottery Wheel
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+}

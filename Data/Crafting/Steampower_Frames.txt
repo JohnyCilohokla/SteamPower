@@ -1,0 +1,341 @@
+All Recipes
+{
+	Sheet Table Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Sheet Table Frame"
+			craftTime = 10.0
+			priority = 3
+			
+			Components
+			{
+				Part1
+				{
+					"Vines" = 4
+				}
+				
+				Part2
+				{
+					"Wood Shaft" = 5
+				}
+	
+			}
+			
+			Results
+			{
+				"Sheet Table Frame" = 1
+			}
+
+		}
+	}
+	
+	Pottery Wheel Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Pottery Wheel Frame"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 10
+					"Wood Plank" = 10
+				}
+				
+				Part2
+				{
+					"Wood Shaft" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Pottery Wheel Frame" = 1
+			}
+
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	Large Furnace Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Large Furnace Frame"
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Shaft" = 4
+				}
+				Part2
+				{
+					"Cobblestone" = 15
+				}
+
+			}
+
+			
+			Results
+			{
+				"Large Furnace Frame" = 1
+			}
+		}
+	}
+	
+	Improved Workbench Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Improved Workbench Frame"
+			craftTime = 5.0
+			priority = 2.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Stacked Wood" = 80
+					"Wood Plank" = 80
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Improved Workbench Frame" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Conveyor Belt Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Conveyor Belt Frame"
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Strips" = 4
+				}
+				Part3
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Conveyor Belt Frame" = 1
+			}
+		}
+	}
+	
+	Conveyor Ramp Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Conveyor Ramp Frame"
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 7
+				}
+				Part2
+				{
+					"Iron Strips" = 5
+				}
+				Part3
+				{
+					"Iron Rod" = 2
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Conveyor Ramp Frame" = 1
+			}
+		}
+	}
+	
+	T Sorter Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "T Sorter Frame"
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Sheet" = 2
+				}
+				Part3
+				{
+					"Iron Rod" = 4
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"T Sorter Frame" = 1
+			}
+		}
+	}
+	
+	Elevator Frame Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Elevator Frame"
+			craftTime = 8.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Girder" = 8
+				}
+				Part2
+				{
+					"Iron Sheet" = 3
+				}
+				Part3
+				{
+					"Iron Strips" = 2
+				}
+				Part4
+				{
+					"Nails and Screws" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Elevator Frame" = 1
+			}
+		}
+	}
+}

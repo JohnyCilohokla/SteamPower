@@ -1,0 +1,401 @@
+All Recipes
+{
+	Plaster Cast Axe Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Axe"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Jagged Rock" = 1
+					"Crude Axe" = 1
+					"Bronze Axe Head" = 1
+					"Bronze Axe" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Axe" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Hammer Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Hammer"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Round Rock" = 1
+					"Crude Hammer" = 1
+					"Bronze Hammer Head" = 1
+					"Bronze Hammer" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Hammer" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Pick Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Pick"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 2
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Crude Pick" = 1
+					"Bronze Pick Head" = 1
+					"Bronze Pick" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Pick" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting S Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Knife Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Knife"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Small Rock Spire" = 1
+					"Flint Head" = 1
+					"Crude Knife" = 1
+					"Bronze Knife Blade" = 1
+					"Bronze Knife" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Knife" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Spear Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Spear"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Wood Spear" = 1
+					"Bronze Spear Head" = 1
+					"Bronze Spear" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Spear" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Shovel Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Shovel"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Crude Shovel" = 1
+					"Bronze Shovel Head" = 1
+					"Bronze Shovel" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Shovel" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	Plaster Cast Hoe Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Hoe"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 1
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Crude Hoe" = 1
+					"Bronze Hoe Head" = 1
+					"Bronze Hoe" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Hoe" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting Cylinder
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Sword Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Sword"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 3
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Crude Sword" = 1
+					"Bronze Sword Blade" = 1
+					"Bronze Sword" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Sword" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting M Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Plaster Cast Anvil Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Plaster Cast Anvil"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Limestone Powder Clump" = 4
+				}
+			}
+			
+			Unconsumed Components
+			{
+				Part2
+				{
+					"Stone Anvil" = 1
+					"Bronze Anvil" = 1
+					"Iron Anvil" = 1
+				}
+			}
+			
+			Results
+			{
+				"Plaster Cast Anvil" = 1
+			}
+
+			Crafting Stations
+			{
+				Casting L Box Wooden
+				{
+					spawnOffsetOverride = <0.0, 1.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+}

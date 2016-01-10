@@ -1,0 +1,210 @@
+All Recipes
+{
+	Wooden Mallet Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Wooden Mallet"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Forked Stick" = 1
+				}
+				
+				Part2
+				{
+					"Wood Branch" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wooden Mallet" = 1
+			}
+
+			Crafting Stations
+			{
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Iron Wrench Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Wrench"
+			craftTime = 8.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 3
+				}
+				
+				Part2
+				{
+					"Nails and Screws" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Iron Wrench" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Bronze Shears Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Shears"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Knife Blade" = 2
+				}
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Bronze Shears" = 1
+			}
+
+			Crafting Stations
+			{
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Stone Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Crucible Fork Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Crucible Fork"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Rod" = 2
+				}
+				Part2
+				{
+					"Leather Strips" = 1
+				}
+				Part3
+				{
+					"Iron Strips" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Crucible Fork" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+}

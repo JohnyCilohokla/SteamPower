@@ -1,0 +1,476 @@
+All Recipes
+{
+	Anvil Stand Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Anvil Stand"
+			craftTime = 5.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Stacked Wood" = 50
+					"Wood Plank" = 50
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Anvil Stand" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 9.0
+				}
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 9.0
+				}
+			}
+		}
+	}
+
+	Casting L Box Wooden Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting L Box Wooden"
+			craftTime = 10.0
+			priority = 3
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 30
+					"Wood Plank" = 30
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting L Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Casting M Box Wooden Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting M Box Wooden"
+			craftTime = 10.0
+			priority = 2
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 20
+					"Wood Plank" = 20
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting M Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Casting S Box Wooden Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Casting S Box Wooden"
+			craftTime = 10.0
+			priority = 1
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 10
+					"Wood Plank" = 10
+				}
+				
+				Part2
+				{
+					"Limestone Powder Clump" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Casting S Box Wooden" = 1
+			}
+			
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 10.0
+				}
+			}
+		}
+	}
+	
+	Sheet Table Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Sheet Table"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Sheet Table Frame" = 1
+				}
+				
+				Part2
+				{
+					"Clay Clump" = 30
+				}
+	
+			}
+			
+			Results
+			{
+				"Sheet Table" = 1
+			}
+
+		}
+	}
+
+	Bronze Bellows Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Bellows"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+				
+				Part2
+				{
+					"Leather Strips" = 2
+				}
+
+				Part3
+				{
+					"Stacked Wood" = 4
+					"Wood Plank" = 4
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Bronze Bellows" = 1
+			}
+
+			Crafting Stations
+			{
+
+
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Wooden Bowl Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Wooden Bowl"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Chopped Wood" = 2
+					"Stacked Wood" = 6
+					"Wood Plank" = 6
+				}
+			}
+			
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 0
+			}
+			
+			Results
+			{
+				"Wooden Bowl" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+			}
+		}
+	}
+	
+	Pottery Wheel Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Pottery Wheel"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Pottery Wheel Frame" = 1
+				}
+				
+				Part2
+				{
+					"Stacked Wood" = 15
+					"Wood Plank" = 15
+				}
+				
+				Part3
+				{
+					"Wood Shaft" = 6
+				}
+				
+				Part4
+				{
+					"Wooden Bowl" = 1
+				}
+				
+				Part5
+				{
+					"Clay Clump" = 5
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Pottery Wheel" = 1
+			}
+		}
+	}
+	
+	Improved Workbench Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Improved Workbench"
+			craftTime = 10.0
+			
+			Components
+			{
+
+				Part1
+				{
+					"Improved Workbench Frame" = 1
+				}
+				
+				Part2
+				{
+					"Stacked Wood" = 20
+					"Wood Plank" = 20
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Improved Workbench" = 1
+			}
+		}
+	}
+	
+	Large Furnace Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Large Furnace"
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Large Furnace Frame" = 1
+				}
+				Part2
+				{
+					"Cobblestone" = 20
+				}
+				Part3
+				{
+					"Clay Clump" = 20
+				}
+				Part4
+				{
+					"Coal" = 1
+				}
+				Part5
+				{
+					"Iron Strips" = 2
+				}
+			}
+			Results
+			{
+				"Large Furnace Lit" = 1
+			}
+		}
+	}
+}

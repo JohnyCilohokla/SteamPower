@@ -20,7 +20,15 @@ function SteamPower:Initialize()
 	Eternus.GameState:RegisterSlashCommand("SteamPower", self, "Info")
 	
 	CL.println("TUG SteamPower:RegisterCrafting")
-	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_crafting.txt", "SteamPower")
+
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Components.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Crafting Stations.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Frames.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_PlasterCasts.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_PotteryFiring.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_PotteryWheel.txt", "SteamPower")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Tools.txt", "SteamPower")
+	
 end
 
 -------------------------------------------------------------------------------

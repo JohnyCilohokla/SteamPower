@@ -1,0 +1,120 @@
+All Recipes
+{
+	Crucible Empty Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Crucible Empty"
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Crucible New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Crucible Empty" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	
+	Clay Jar Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Clay Jar"
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Clay Jar New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Clay Jar" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	
+	Casting Cylinder Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Firing... "
+			craftingDisplayName = "Casting Cylinder"
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Casting Cylinder New" = 1
+				}
+			}
+			
+			Results
+			{
+				"Casting Cylinder" = 1
+			}
+
+			Crafting Stations
+			{
+				Stone Furnace
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Large Furnace Lit
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+
+}

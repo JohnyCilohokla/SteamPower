@@ -1,0 +1,393 @@
+All Recipes
+{
+
+	Bronze Cog Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Cog"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+	
+			}
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Cog" = 4
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Iron Strips Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Strips"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Sheet" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Strips" = 8
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Girder Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Girder"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Girder" = 1
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 3.0
+				}
+			}
+		}
+	}
+	
+	Nails and Screws Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Nails and Screws"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Strips" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Shears"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Nails and Screws" = 2
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Bronze Tube Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Tube"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Sheet" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Tube" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	Iron Tube Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Tube"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Sheet" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Mallet"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Tube" = 1
+			}
+
+			Crafting Stations
+			{
+				Improved Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 12.0
+				}
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 8.0
+				}
+			}
+		}
+	}
+	
+	Bronze Rod Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Bronze Rod"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bronze Tube" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bronze Rod" = 3
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+	Iron Rod Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			craftingActionName = "Crafting... "
+			craftingDisplayName = "Iron Rod"
+			craftTime = 5.0
+			
+			Components
+			{
+				Part1
+				{
+					"Iron Tube" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Iron Rod" = 3
+			}
+
+			Crafting Stations
+			{
+				Iron Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 5.0
+				}
+				Bronze Anvil
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					craftTime = 6.0
+				}
+			}
+		}
+	}
+}
