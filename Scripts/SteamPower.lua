@@ -1,10 +1,8 @@
 -- SteamPower
 
-CL.println("TUG SteamPower:__Initialize")
 -------------------------------------------------------------------------------
 if SteamPower == nil then
 	SteamPower = EternusEngine.ModScriptClass.Subclass("SteamPower")
-	CL.println("TUG SteamPower:_Initialize")
 end
 
 -------------------------------------------------------------------------------
@@ -19,7 +17,12 @@ function SteamPower:Initialize()
 
 	Eternus.GameState:RegisterSlashCommand("SteamPower", self, "Info")
 	
-	CL.println("TUG SteamPower:RegisterCrafting")
+	CL.println("TUG SteamPower:Initialize Archetypes")
+	
+	-- Parse archetypes
+	Eternus.CraftingSystem:ParseArchetypesFile("Data/Archetypes/SteamPower.txt")
+	
+	CL.println("TUG SteamPower:Initialize Crafting")
 
 	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Components.txt", "SteamPower")
 	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Steampower_Crafting Stations.txt", "SteamPower")
@@ -34,13 +37,13 @@ end
 -------------------------------------------------------------------------------
 -- Called from C++ when the current game enters 
 function SteamPower:Enter()	
-	CL.println("TUG SteamPower:Enter")
+	--CL.println("TUG SteamPower:Enter")
 end
 
 -------------------------------------------------------------------------------
 -- Called from C++ when the game leaves it current mode
 function SteamPower:Leave()
-	CL.println("TUG SteamPower:Leave")
+	--CL.println("TUG SteamPower:Leave")
 end
 
 

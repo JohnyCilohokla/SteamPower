@@ -22,7 +22,6 @@ All Recipes
 			{
 				Part2
 				{
-					"Axe Head" = 1
 					"Axe" = 1
 				}
 			}
@@ -80,7 +79,6 @@ All Recipes
 			{
 				Part2
 				{
-					"Hammer Head" = 1
 					"Hammer" = 1
 				}
 			}
@@ -128,7 +126,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 1
 				}
@@ -136,9 +134,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Pick
 				{
-					"Pick Head" = 1
 					"Pick" = 1
 				}
 			}
@@ -186,7 +183,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 1
 				}
@@ -194,9 +191,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Knife
 				{
-					"Knife Blade" = 1
 					"Knife" = 1
 				}
 			}
@@ -244,7 +240,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 1
 				}
@@ -252,9 +248,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Spear
 				{
-					"Spear Head" = 1
 					"Spear" = 1
 				}
 			}
@@ -302,7 +297,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 1
 				}
@@ -310,9 +305,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Shovel
 				{
-					"Shovel Head" = 1
 					"Shovel" = 1
 				}
 			}
@@ -359,7 +353,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 1
 				}
@@ -367,9 +361,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Hoe
 				{
-					"Hoe Head" = 1
 					"Hoe" = 1
 				}
 			}
@@ -417,7 +410,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 3
 				}
@@ -425,9 +418,8 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Sword
 				{
-					"Sword Blade" = 1
 					"Sword" = 1
 				}
 			}
@@ -475,7 +467,7 @@ All Recipes
 			
 			Components
 			{
-				Part1
+				Limestone Powder
 				{
 					"Limestone Powder Clump" = 4
 				}
@@ -483,11 +475,9 @@ All Recipes
 			
 			Unconsumed Components
 			{
-				Part2
+				Anvil
 				{
-					"Stone Anvil" = 1
-					"Bronze Anvil" = 1
-					"Iron Anvil" = 1
+					"Anvil" = 1
 				}
 			}
 			
